@@ -33,12 +33,17 @@ header {
 header .step-subcontainer .step-circle {
   display: grid;
   place-content: center;
-  border: 1.5px solid hsl(217deg, 100%, 97%);
+  border: 1px solid hsl(217deg, 100%, 97%);
   color: hsl(217deg, 100%, 97%);
   font-weight: 500;
   border-radius: 50%;
   width: 2.344rem;
   height: 2.344rem;
+}
+header .step-subcontainer .step-circle.active {
+  background: hsl(206deg, 94%, 87%);
+  border: 1px solid hsl(206deg, 94%, 87%);
+  color: hsl(213deg, 96%, 18%);
 }
 header .step-subcontainer .step-info {
   display: none;

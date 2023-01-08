@@ -13,12 +13,18 @@ header {
         .step-circle {
             display: grid;
             place-content: center;
-            border: 1.5px solid $magnolia;
+            border: 1px solid $magnolia;
             color: $magnolia;
             font-weight: 500;
             border-radius: 50%;
             width: 2.344rem;
             height: 2.344rem;
+
+            &.active {
+                background: $light-blue;
+                border: 1px solid $light-blue;
+                color: $marine-blue;
+            }
         }
 
         .step-info {
