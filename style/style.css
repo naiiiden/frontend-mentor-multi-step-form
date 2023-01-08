@@ -56,6 +56,13 @@ header .step-subcontainer .step-info {
   margin: -4rem 1rem 1rem 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.main-subcontainer .text-container h1 {
+  color: hsl(213deg, 96%, 18%);
+  font-size: 1.75rem;
+}
+.main-subcontainer .text-container p {
+  color: hsl(231deg, 11%, 63%);
+}
 
 body {
   font-family: Ubuntu, "sans-serif";
