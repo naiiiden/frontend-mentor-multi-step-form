@@ -1,6 +1,10 @@
+// utilities
 @import "./reset";
 @import "./variables";
 @import "./fonts";
+
+// components
+@import "./header";
 
 body {
     font-family: Ubuntu, "sans-serif";
