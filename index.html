@@ -65,16 +65,21 @@
           <!-- ^^ H1 AND P TEXT CONTENT CHANGES DEPENDING ON FORM STEP -->
         </div>
         <form action="">
-          <label for="name-input">Name</label>
-          <input type="text" name="name" id="name-input" placeholder="e.g. Stephen King">
-          <label for="email-input">Email Address</label>
-          <input type="email" name="email" id="email-input" placeholder="e.g. stephenking@lorem.com">
-          <label for="tel-input">Phone Number</label>
-          <input type="tel" name="tel" id="tel-input" placeholder="e.g. + 1 234 567 890">
+          <div class="form-step-1">
+            <label for="name-input">Name</label>
+            <input type="text" name="name" id="name-input" placeholder="e.g. Stephen King">
+            <label for="email-input">Email Address</label>
+            <input type="email" name="email" id="email-input" placeholder="e.g. stephenking@lorem.com">
+            <label for="tel-input">Phone Number</label>
+            <input type="tel" name="tel" id="tel-input" placeholder="e.g. + 1 234 567 890">
+          </div>
+          <div class="btn-container">
+            <button class="btn-back">Go Back</button>
+            <button class="btn-next">Next Step</button>
+            <input class="btn-submit" type="submit" value="Confirm">
+          </div>
         </form>
       </div>
-    
-      Next Step
     
       <!-- Step 1 end -->
     
@@ -93,8 +98,6 @@
       Monthly
       Yearly
     
-      Go Back
-      Next Step
     
       <!-- Step 2 end -->
     
@@ -114,8 +117,6 @@
       Custom theme on your profile
       +$2/mo
     
-      Go Back
-      Next Step
     
       <!-- Step 3 end -->
     
@@ -126,9 +127,7 @@
       <!-- Dynamically add subscription and add-on selections here -->
     
       Total (per month/year)
-    
-      Go Back
-      Confirm
+  
     
       <!-- Step 4 end -->
     
