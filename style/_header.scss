@@ -3,4 +3,26 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 2rem 1rem 5rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .step-subcontainer {
+        .step-circle {
+            display: grid;
+            place-content: center;
+            border: 1.5px solid $magnolia;
+            color: $magnolia;
+            font-weight: 500;
+            border-radius: 50%;
+            width: 2.344rem;
+            height: 2.344rem;
+        }
+
+        .step-info {
+            display: none;
+        }
+    }
 }
