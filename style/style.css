@@ -106,30 +106,38 @@ header .step-subcontainer .step-info {
   left: 0;
   width: 100%;
   padding: 1rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: end;
+  display: flex;
+  justify-content: space-between;
 }
 .main-subcontainer form .btn-container .btn-back {
-  justify-self: start;
-  border: none;
-  font-weight: 500;
-  font-size: 0.875rem;
-  background: none !important;
-  color: hsl(225deg, 11%, 49%) !important;
-}
-.main-subcontainer form .btn-container .btn-next, .main-subcontainer form .btn-container .btn-submit, .main-subcontainer form .btn-container .btn-back {
-  background: hsl(213deg, 96%, 18%);
   border: none;
   border-radius: 0.5rem;
-  color: hsl(217deg, 100%, 97%);
   padding: 0.875rem 1rem;
   font-weight: 500;
   font-size: 0.875rem;
+  background: none;
+  color: hsl(225deg, 11%, 49%);
+  display: none;
+}
+.main-subcontainer form .btn-container .btn-next {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  background: hsl(213deg, 96%, 18%);
+  color: hsl(217deg, 100%, 97%);
+  margin-left: auto;
 }
 .main-subcontainer form .btn-container .btn-submit {
-  display: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
   background: hsl(243deg, 100%, 62%);
+  color: hsl(217deg, 100%, 97%);
+  display: none;
 }
 
 body {

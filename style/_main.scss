@@ -58,34 +58,36 @@
             left: 0;
             width: 100%;
             padding: 1rem 1rem;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: end;
+            display: flex;
+            justify-content: space-between;
 
-            .btn-back {
-                @extend .btn-next;
-                justify-self: start;
-                border: none;
-                font-weight: 500;
-                font-size: 0.875rem;
-                background: none !important;
-                color: $cool-gray !important;
-            }
-
-            .btn-next {
-                background: $marine-blue;
+            @mixin btn {
                 border: none;
                 border-radius: .5rem;
-                color: $magnolia;
                 padding: .875rem 1rem;
                 font-weight: 500;
                 font-size: 0.875rem;
             }
 
-            .btn-submit {
+            .btn-back {
+                @include btn;
+                background: none;
+                color: $cool-gray;
                 display: none;
-                @extend .btn-next;
+            }
+
+            .btn-next {
+                @include btn;
+                background: $marine-blue;
+                color: $magnolia;
+                margin-left: auto;
+            }
+
+            .btn-submit {
+                @include btn;
                 background: $purplish-blue;
+                color: $magnolia;
+                display: none;                
             }
         }
     }
