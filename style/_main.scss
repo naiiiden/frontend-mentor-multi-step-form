@@ -23,13 +23,23 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 1.5rem 1rem;
+            padding: 1.25rem 1rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: end;
 
             .btn-back {
                 justify-self: start;
+            }
+
+            .btn-next {
+                background: $marine-blue;
+                border: none;
+                border-radius: .5rem;
+                color: $magnolia;
+                padding: .875rem 1rem;
+                font-weight: 500;
+                font-size: 0.875rem;
             }
 
             .btn-submit {
