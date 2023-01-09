@@ -77,7 +77,7 @@ header .step-subcontainer .step-info {
 .main-subcontainer form .btn-container .btn-back {
   justify-self: start;
 }
-.main-subcontainer form .btn-container .btn-next {
+.main-subcontainer form .btn-container .btn-next, .main-subcontainer form .btn-container .btn-submit {
   background: hsl(213deg, 96%, 18%);
   border: none;
   border-radius: 0.5rem;
@@ -88,6 +88,7 @@ header .step-subcontainer .step-info {
 }
 .main-subcontainer form .btn-container .btn-submit {
   display: none;
+  background: hsl(243deg, 100%, 62%);
 }
 
 body {
