@@ -16,36 +16,38 @@
         }
     }
 
-    .form-step-1 {
-        margin-top: 1rem;
-        font-size: .75rem;
-
-        .label-error-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-bottom: 0.125rem;
-            color: $marine-blue;
-
-            .error {
-                justify-self: end;
-                color: $strawberry-red;
-                font-weight: 500;
+    form {
+        .form-step-1 {
+            margin-top: 1rem;
+            font-size: .75rem;
+    
+            .label-error-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 0.125rem;
+                color: $marine-blue;
+    
+                .error {
+                    justify-self: end;
+                    color: $strawberry-red;
+                    font-weight: 500;
+                }
             }
-        }
-
-        #name-input, #email-input, #tel-input {
-            width: 100%;
-            padding: .625rem;
-            border-radius: .25rem;
-            border: 1px solid $light-gray;
-
-            &::placeholder {
-                font-weight: 500;
-                color: $cool-gray;
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 1rem;
+    
+            #name-input, #email-input, #tel-input {
+                width: 100%;
+                padding: .625rem;
+                border-radius: .25rem;
+                border: 1px solid $light-gray;
+    
+                &::placeholder {
+                    font-weight: 500;
+                    color: $cool-gray;
+                }
+    
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
             }
         }
 
@@ -55,7 +57,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 1.25rem 1rem;
+            padding: 1rem 1rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: end;
@@ -87,4 +89,5 @@
             }
         }
     }
+
 }
