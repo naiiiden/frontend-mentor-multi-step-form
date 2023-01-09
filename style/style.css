@@ -61,7 +61,7 @@ header .step-subcontainer .step-info {
   font-size: 1.75rem;
 }
 .main-subcontainer .text-container p {
-  color: hsl(231deg, 11%, 63%);
+  color: hsl(225deg, 11%, 49%);
 }
 .main-subcontainer form .btn-container {
   background: hsl(0deg, 0%, 100%);
@@ -79,7 +79,7 @@ header .step-subcontainer .step-info {
   border: none;
   background: none;
   font-weight: 500;
-  color: hsl(231deg, 11%, 63%);
+  color: hsl(225deg, 11%, 49%);
   font-size: 0.875rem;
 }
 .main-subcontainer form .btn-container .btn-next, .main-subcontainer form .btn-container .btn-submit {
