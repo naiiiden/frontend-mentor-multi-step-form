@@ -67,8 +67,16 @@ header .step-subcontainer .step-info {
   margin-top: 1rem;
   font-size: 0.75rem;
 }
-.main-subcontainer .form-step-1 label {
+.main-subcontainer .form-step-1 .label-error-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 0.125rem;
   color: hsl(213deg, 96%, 18%);
+}
+.main-subcontainer .form-step-1 .label-error-container .error {
+  justify-self: end;
+  color: hsl(354deg, 84%, 57%);
+  font-weight: 500;
 }
 .main-subcontainer .form-step-1 #name-input, .main-subcontainer .form-step-1 #email-input, .main-subcontainer .form-step-1 #tel-input {
   width: 100%;

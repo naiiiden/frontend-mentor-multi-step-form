@@ -20,8 +20,17 @@
         margin-top: 1rem;
         font-size: .75rem;
 
-        label {
+        .label-error-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 0.125rem;
             color: $marine-blue;
+
+            .error {
+                justify-self: end;
+                color: $strawberry-red;
+                font-weight: 500;
+            }
         }
 
         #name-input, #email-input, #tel-input {
