@@ -140,6 +140,22 @@ header .step-subcontainer .step-info {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+  .header-main-container {
+    display: flex;
+  }
+  .main-subcontainer {
+    margin: unset;
+  }
+  .main-subcontainer form .btn-container {
+    position: unset;
+  }
+}
 body {
   font-family: Ubuntu, "sans-serif";
   background: hsl(217deg, 100%, 97%);
