@@ -1,5 +1,5 @@
 .main-subcontainer {
-    background: #fff;
+    background: $white;
     border-radius: .5rem;
     padding: 1.5rem 1.25rem;
     margin: -4rem 1rem 1rem 1rem;
@@ -13,6 +13,28 @@
 
         p {
             color: $cool-gray;
+        }
+    }
+
+    form {
+        .btn-container {
+            background: $white;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: end;
+
+            .btn-back {
+                justify-self: start;
+            }
+
+            .btn-submit {
+                display: none;
+            }
         }
     }
 }
