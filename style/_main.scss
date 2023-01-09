@@ -16,7 +16,30 @@
         }
     }
 
-    form {
+    .form-step-1 {
+        margin-top: 1rem;
+        font-size: .75rem;
+
+        label {
+            color: $marine-blue;
+        }
+
+        #name-input, #email-input, #tel-input {
+            width: 100%;
+            padding: .625rem;
+            border-radius: .25rem;
+            border: 1px solid $light-gray;
+
+            &::placeholder {
+                font-weight: 500;
+                color: $cool-gray;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+
         .btn-container {
             background: $white;
             position: fixed;

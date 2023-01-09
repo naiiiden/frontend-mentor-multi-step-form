@@ -63,7 +63,35 @@ header .step-subcontainer .step-info {
 .main-subcontainer .text-container p {
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer form .btn-container {
+.main-subcontainer .form-step-1 {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+}
+.main-subcontainer .form-step-1 label {
+  color: hsl(213deg, 96%, 18%);
+}
+.main-subcontainer .form-step-1 #name-input, .main-subcontainer .form-step-1 #email-input, .main-subcontainer .form-step-1 #tel-input {
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 1px solid hsl(229deg, 24%, 87%);
+}
+.main-subcontainer .form-step-1 #name-input::-moz-placeholder, .main-subcontainer .form-step-1 #email-input::-moz-placeholder, .main-subcontainer .form-step-1 #tel-input::-moz-placeholder {
+  font-weight: 500;
+  color: hsl(225deg, 11%, 49%);
+}
+.main-subcontainer .form-step-1 #name-input:-ms-input-placeholder, .main-subcontainer .form-step-1 #email-input:-ms-input-placeholder, .main-subcontainer .form-step-1 #tel-input:-ms-input-placeholder {
+  font-weight: 500;
+  color: hsl(225deg, 11%, 49%);
+}
+.main-subcontainer .form-step-1 #name-input::placeholder, .main-subcontainer .form-step-1 #email-input::placeholder, .main-subcontainer .form-step-1 #tel-input::placeholder {
+  font-weight: 500;
+  color: hsl(225deg, 11%, 49%);
+}
+.main-subcontainer .form-step-1 #name-input:not(:last-child), .main-subcontainer .form-step-1 #email-input:not(:last-child), .main-subcontainer .form-step-1 #tel-input:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.main-subcontainer .form-step-1 .btn-container {
   background: hsl(0deg, 0%, 100%);
   position: fixed;
   bottom: 0;
@@ -74,7 +102,7 @@ header .step-subcontainer .step-info {
   grid-template-columns: repeat(2, 1fr);
   justify-items: end;
 }
-.main-subcontainer form .btn-container .btn-back {
+.main-subcontainer .form-step-1 .btn-container .btn-back {
   justify-self: start;
   border: none;
   background: none;
@@ -82,7 +110,7 @@ header .step-subcontainer .step-info {
   color: hsl(225deg, 11%, 49%);
   font-size: 0.875rem;
 }
-.main-subcontainer form .btn-container .btn-next, .main-subcontainer form .btn-container .btn-submit {
+.main-subcontainer .form-step-1 .btn-container .btn-next, .main-subcontainer .form-step-1 .btn-container .btn-submit {
   background: hsl(213deg, 96%, 18%);
   border: none;
   border-radius: 0.5rem;
@@ -91,7 +119,7 @@ header .step-subcontainer .step-info {
   font-weight: 500;
   font-size: 0.875rem;
 }
-.main-subcontainer form .btn-container .btn-submit {
+.main-subcontainer .form-step-1 .btn-container .btn-submit {
   display: none;
   background: hsl(243deg, 100%, 62%);
 }
