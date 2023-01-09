@@ -30,6 +30,11 @@
 
             .btn-back {
                 justify-self: start;
+                border: none;
+                background: none;
+                font-weight: 500;
+                color: $cool-gray;
+                font-size: 0.875rem;
             }
 
             .btn-next {

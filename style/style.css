@@ -76,6 +76,11 @@ header .step-subcontainer .step-info {
 }
 .main-subcontainer form .btn-container .btn-back {
   justify-self: start;
+  border: none;
+  background: none;
+  font-weight: 500;
+  color: hsl(231deg, 11%, 63%);
+  font-size: 0.875rem;
 }
 .main-subcontainer form .btn-container .btn-next, .main-subcontainer form .btn-container .btn-submit {
   background: hsl(213deg, 96%, 18%);
