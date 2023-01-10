@@ -108,6 +108,12 @@ header .step-subcontainer .step-info {
   padding: 0.625rem;
   border-radius: 0.375rem;
   border: 1px solid hsl(229deg, 24%, 87%);
+  color: hsl(213deg, 96%, 18%);
+  font-weight: 500;
+}
+.main-subcontainer form .form-step-1 #name-input#name-input:focus, .main-subcontainer form .form-step-1 #name-input#email-input:focus, .main-subcontainer form .form-step-1 #name-input#tel-input:focus, .main-subcontainer form .form-step-1 #name-input#name-input:active, .main-subcontainer form .form-step-1 #name-input#email-input:active, .main-subcontainer form .form-step-1 #name-input#tel-input:active, .main-subcontainer form .form-step-1 #email-input#name-input:focus, .main-subcontainer form .form-step-1 #email-input#email-input:focus, .main-subcontainer form .form-step-1 #email-input#tel-input:focus, .main-subcontainer form .form-step-1 #email-input#name-input:active, .main-subcontainer form .form-step-1 #email-input#email-input:active, .main-subcontainer form .form-step-1 #email-input#tel-input:active, .main-subcontainer form .form-step-1 #tel-input#name-input:focus, .main-subcontainer form .form-step-1 #tel-input#email-input:focus, .main-subcontainer form .form-step-1 #tel-input#tel-input:focus, .main-subcontainer form .form-step-1 #tel-input#name-input:active, .main-subcontainer form .form-step-1 #tel-input#email-input:active, .main-subcontainer form .form-step-1 #tel-input#tel-input:active {
+  outline: 1px solid hsl(243deg, 100%, 62%);
+  border: 1px solid hsl(243deg, 100%, 62%);
 }
 .main-subcontainer form .form-step-1 #name-input::-moz-placeholder, .main-subcontainer form .form-step-1 #email-input::-moz-placeholder, .main-subcontainer form .form-step-1 #tel-input::-moz-placeholder {
   font-weight: 500;

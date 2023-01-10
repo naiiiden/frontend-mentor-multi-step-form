@@ -40,6 +40,14 @@
                 padding: .625rem;
                 border-radius: .375rem;
                 border: 1px solid $light-gray;
+                color: $marine-blue;
+                font-weight: 500;
+
+                &#name-input:focus, &#email-input:focus, &#tel-input:focus,
+                &#name-input:active, &#email-input:active, &#tel-input:active {
+                    outline: 1px solid $purplish-blue;
+                    border: 1px solid $purplish-blue;
+                }
     
                 &::placeholder {
                     font-weight: 500;
