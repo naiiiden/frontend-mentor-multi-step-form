@@ -202,24 +202,27 @@ header .step-subcontainer .step-info {
     padding: 0;
     margin-top: 5rem;
   }
+  .main-subcontainer form .btn-container button:focus-visible {
+    outline-offset: 3px;
+  }
   .main-subcontainer form .btn-container .btn-back {
     transition: 0.1s;
   }
-  .main-subcontainer form .btn-container .btn-back:hover {
+  .main-subcontainer form .btn-container .btn-back:hover, .main-subcontainer form .btn-container .btn-back:focus-visible {
     color: hsl(213deg, 96%, 18%);
     transition: 0.1s;
   }
   .main-subcontainer form .btn-container .btn-next {
     transition: 0.1s;
   }
-  .main-subcontainer form .btn-container .btn-next:hover {
+  .main-subcontainer form .btn-container .btn-next:hover, .main-subcontainer form .btn-container .btn-next:focus-visible {
     background: #033e86;
     transition: 0.1s;
   }
   .main-subcontainer form .btn-container .btn-submit {
     transition: 0.1s;
   }
-  .main-subcontainer form .btn-container .btn-submit:hover {
+  .main-subcontainer form .btn-container .btn-submit:hover, .main-subcontainer form .btn-container .btn-submit:focus-visible {
     background: #7770ff;
     transition: 0.1s;
   }

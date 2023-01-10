@@ -140,10 +140,14 @@
                 padding: 0;
                 margin-top: 5rem;
 
+                button:focus-visible {
+                    outline-offset: 3px;
+                }
+
                 .btn-back {
                     transition: .1s;
 
-                    &:hover {
+                    &:hover, &:focus-visible {
                         color: $marine-blue;
                         transition: .1s;
                     }
@@ -152,7 +156,7 @@
                 .btn-next {
                     transition: .1s;
 
-                    &:hover {
+                    &:hover, &:focus-visible {
                         background: lighten($color: $marine-blue, $amount: 8.75%);
                         transition: .1s;
                     }
@@ -161,7 +165,7 @@
                 .btn-submit {
                     transition: .1s;
 
-                    &:hover {
+                    &:hover, &:focus-visible {
                         background: lighten($color: $purplish-blue, $amount: 10%);
                         transition: .1s;
                     }
