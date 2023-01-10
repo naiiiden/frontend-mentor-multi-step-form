@@ -120,6 +120,19 @@
         }
 
         form {
+            .form-step-1 {
+                font-size: .875rem;
+        
+                #name-input, #email-input, #tel-input {
+                    padding: .75rem;
+                    font-size: inherit;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+
             .btn-container {
                 position: unset;
                 padding: 0;
