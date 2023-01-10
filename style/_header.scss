@@ -32,3 +32,21 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 2rem 6rem 0 2rem;
+        justify-content: flex-start;
+
+        .step-subcontainer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .step-info {
+                display: grid;
+            }
+        }
+    }
+}

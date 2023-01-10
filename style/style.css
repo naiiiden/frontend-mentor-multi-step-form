@@ -49,6 +49,21 @@ header .step-subcontainer .step-info {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 2rem 6rem 0 2rem;
+    justify-content: flex-start;
+  }
+  header .step-subcontainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  header .step-subcontainer .step-info {
+    display: grid;
+  }
+}
 .main-subcontainer {
   background: hsl(0deg, 0%, 100%);
   border-radius: 0.5rem;
