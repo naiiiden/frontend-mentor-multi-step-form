@@ -86,8 +86,10 @@ header .step-subcontainer .step-info {
 .main-subcontainer .text-container p {
   color: hsl(225deg, 11%, 49%);
 }
+.main-subcontainer form {
+  margin-top: 1.5rem;
+}
 .main-subcontainer form .form-step-1 {
-  margin-top: 1rem;
   font-size: 0.75rem;
 }
 .main-subcontainer form .form-step-1 .label-error-container {
