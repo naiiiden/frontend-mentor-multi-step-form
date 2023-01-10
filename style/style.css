@@ -54,6 +54,7 @@ header .step-subcontainer .step-info {
     flex-direction: column;
     padding: 2rem 5rem 0 1.5rem;
     justify-content: flex-start;
+    border-radius: 0.5rem;
   }
   header .step-subcontainer {
     display: flex;
@@ -170,9 +171,14 @@ header .step-subcontainer .step-info {
   }
   .header-main-container {
     display: flex;
+    padding: 1rem;
+    background: hsl(0deg, 0%, 100%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0.5rem;
   }
   .main-subcontainer {
     margin: unset;
+    box-shadow: unset;
   }
   .main-subcontainer form .btn-container {
     position: unset;
