@@ -38,7 +38,7 @@
             #name-input, #email-input, #tel-input {
                 width: 100%;
                 padding: .625rem;
-                border-radius: .25rem;
+                border-radius: .375rem;
                 border: 1px solid $light-gray;
     
                 &::placeholder {
@@ -125,6 +125,7 @@
                 font-size: .875rem;
         
                 #name-input, #email-input, #tel-input {
+                    border-radius: .5rem;
                     padding: .75rem;
                     font-size: inherit;
 
