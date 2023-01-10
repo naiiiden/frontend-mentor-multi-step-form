@@ -179,13 +179,15 @@ header .step-subcontainer .step-info {
   .main-subcontainer {
     margin: unset;
     box-shadow: unset;
-    padding: 1.625rem calc(3vw - 1rem) 0 3vw;
+    padding: 1.625rem calc(5vw - 1rem) 0 5vw;
   }
   .main-subcontainer .text-container h1 {
     font-size: 1.875rem;
   }
   .main-subcontainer form .btn-container {
     position: unset;
+    padding: 0;
+    margin-top: 5rem;
   }
 }
 body {
