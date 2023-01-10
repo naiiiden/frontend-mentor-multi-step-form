@@ -36,7 +36,7 @@ header {
 @media screen and (min-width: 768px) {
     header {
         flex-direction: column;
-        padding: 2rem 6rem 0 2rem;
+        padding: 2rem 5rem 0 1.5rem;
         justify-content: flex-start;
 
         .step-subcontainer {
@@ -46,6 +46,14 @@ header {
 
             .step-info {
                 display: grid;
+                text-transform: uppercase;
+                color: $magnolia;
+                font-size: .875rem;
+
+                span {
+                    font-weight: 700;
+                    letter-spacing: .08rem;
+                }
             }
         }
     }
