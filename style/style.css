@@ -175,10 +175,14 @@ header .step-subcontainer .step-info {
     background: hsl(0deg, 0%, 100%);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 0.5rem;
+    gap: 3vw;
   }
   .main-subcontainer {
     margin: unset;
     box-shadow: unset;
+  }
+  .main-subcontainer .text-container h1 {
+    font-size: 1.875rem;
   }
   .main-subcontainer form .btn-container {
     position: unset;
