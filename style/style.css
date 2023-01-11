@@ -90,6 +90,7 @@ header .step-subcontainer .step-info {
   margin-top: 1.5rem;
 }
 .main-subcontainer form .form-step-1 {
+  display: none;
   font-size: 0.75rem;
 }
 .main-subcontainer form .form-step-1 .label-error-container {
