@@ -188,28 +188,28 @@
                 }
 
                 .btn-back {
-                    transition: .1s;
+                    transition: color .1s;
 
                     &:hover, &:focus-visible {
                         color: $marine-blue;
-                        transition: .1s;
+                        transition: color .1s;
                     }
                 }
 
                 .btn-next {
-                    transition: .1s;
+                    transition: background .1s;
 
                     &:hover, &:focus-visible {
                         background: lighten($color: $marine-blue, $amount: 8.75%);
-                        transition: .1s;
+                        transition: background .1s;
                     }
                 }
 
                 .btn-submit {
-                    transition: .1s;
+                    transition: background .1s;
 
                     &:hover, &:focus-visible {
-                        background: lighten($color: $purplish-blue, $amount: 10%);
+                        background: background lighten($color: $purplish-blue, $amount: 10%);
                         transition: .1s;
                     }
                 }
