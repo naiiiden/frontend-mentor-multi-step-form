@@ -70,8 +70,8 @@
                 border: 1px solid $light-gray;
                 border-radius: .375rem;
                 padding: 1rem;
-                display: grid;
-                grid-auto-flow: column;
+                display: flex;
+                align-items: flex-start;
                 gap: 1rem;
                 background: $white;
                 transition: border .1s;
@@ -91,6 +91,27 @@
                     border: none;
                     background: none;
                     opacity: 0;
+                }
+
+                div {
+                    display: grid;
+                    gap: .125rem;
+
+                    .plan-title {
+                        color: $marine-blue;
+                        font-weight: 500;
+                    }
+                    
+                    .fee {
+                        font-size: .875rem;
+                        display: flex;
+                        color: $cool-gray;
+                    }
+
+                    .free {
+                        font-size: .875rem;
+                        color: $marine-blue;
+                    }
                 }
             }
         }
