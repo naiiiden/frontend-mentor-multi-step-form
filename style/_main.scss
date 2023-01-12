@@ -111,6 +111,7 @@
                     .free {
                         font-size: .875rem;
                         color: $marine-blue;
+                        display: none;
                     }
                 }
             }
@@ -196,6 +197,16 @@
                     &:not(:last-child) {
                         margin-bottom: 1.5rem;
                     }
+                }
+            }
+
+            .form-step-2 {
+                grid-auto-flow: column;
+                grid-template-columns: repeat(3, 1fr);
+
+                label {
+                    flex-direction: column;
+                    gap: 2rem;
                 }
             }
 

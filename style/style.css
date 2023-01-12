@@ -176,6 +176,7 @@ header .step-subcontainer .step-info {
 .main-subcontainer form .form-step-2 label div .free {
   font-size: 0.875rem;
   color: hsl(213deg, 96%, 18%);
+  display: none;
 }
 .main-subcontainer form .btn-container {
   background: hsl(0deg, 0%, 100%);
@@ -249,6 +250,14 @@ header .step-subcontainer .step-info {
   }
   .main-subcontainer form .form-step-1 #name-input:not(:last-child), .main-subcontainer form .form-step-1 #email-input:not(:last-child), .main-subcontainer form .form-step-1 #tel-input:not(:last-child) {
     margin-bottom: 1.5rem;
+  }
+  .main-subcontainer form .form-step-2 {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-subcontainer form .form-step-2 label {
+    flex-direction: column;
+    gap: 2rem;
   }
   .main-subcontainer form .btn-container {
     position: unset;
