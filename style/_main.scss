@@ -6,6 +6,8 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     .text-container {
+        margin-bottom: 1.5rem;
+
         h1 {
             color: $marine-blue;
             font-size: 1.5rem;
@@ -16,8 +18,8 @@
         }
     }
 
-    form {
-        margin-top: 1.5rem;
+    fieldset {
+        border: none;
 
         .form-step-1 {
             display: none;
@@ -65,15 +67,6 @@
             display: grid;
             gap: .75rem;
             border: none;
-
-            legend {
-                opacity: 0;
-                position: absolute;
-                user-select: none;
-                pointer-events: none;
-                width: 1px;
-                height: 1px;
-            }
 
             label {
                 position: relative;
@@ -190,12 +183,14 @@
         padding: 1.625rem calc(5vw - 1rem) 0 5vw;
 
         .text-container {
+            margin-bottom: 3rem;
+
             h1 {
                 font-size: 1.875rem;
             }
         }
 
-        form {
+        fieldset {
             .form-step-1 {
                 font-size: .875rem;
         
