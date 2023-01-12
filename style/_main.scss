@@ -71,6 +71,11 @@
                 grid-auto-flow: column;
                 gap: 1rem;
 
+                &:focus-within {
+                    border: 1px solid $purplish-blue;
+                    background: $magnolia;
+                }
+
                 input {
                     position: absolute;
                     border: none;
