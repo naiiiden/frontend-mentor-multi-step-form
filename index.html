@@ -82,44 +82,57 @@
             <input type="tel" name="tel" id="tel-input" placeholder="e.g. + 1 234 567 890">
           </div>
 
-          <div class="form-step-2">
-            <label for="arcade">
-              <input type="radio" name="plan" id="arcade">
-              <img src="assets/images/icon-arcade.svg" alt="">
-              <div>
-                <span class="plan-title">Arcade</span>
-                <span class="fee arcade-fee">
-                  $<span class="price">9</span>
-                  /<span class="monthly-yearly">mo</span>
-                </span>
-                <span class="free">2 months free</span>
-              </div>
-            </label>
-            <label for="advanced">
-              <input type="radio" name="plan" id="advanced">
-              <img src="assets/images/icon-advanced.svg" alt="">
-              <div>
-                <span class="plan-title">Advanced</span>
-                <span class="fee advanced-fee">
-                  $<span class="price">12</span>
-                  /<span class="monthly-yearly">mo</span>
-                </span>
-                <span class="free">2 months free</span>
-              </div>
-            </label>
-            <label for="pro">
-              <input type="radio" name="plan" id="pro">
-              <img src="assets/images/icon-pro.svg" alt="">
-              <div>
-                <span class="plan-title">Pro</span>
-                <span class="fee pro-fee">
-                  $<span class="price">15</span>
-                  /<span class="monthly-yearly">mo</span>
-                </span>
-                <span class="free">2 months free</span>
-              </div>
-            </label>
+          <div>
+            <div class="form-step-2">
+              <label for="arcade">
+                <input type="radio" name="plan" id="arcade">
+                <img src="assets/images/icon-arcade.svg" alt="">
+                <div>
+                  <span class="plan-title">Arcade</span>
+                  <span class="fee arcade-fee">
+                    $<span class="price">9</span>
+                    /<span class="monthly-yearly">mo</span>
+                  </span>
+                  <span class="free">2 months free</span>
+                </div>
+              </label>
+              <label for="advanced">
+                <input type="radio" name="plan" id="advanced">
+                <img src="assets/images/icon-advanced.svg" alt="">
+                <div>
+                  <span class="plan-title">Advanced</span>
+                  <span class="fee advanced-fee">
+                    $<span class="price">12</span>
+                    /<span class="monthly-yearly">mo</span>
+                  </span>
+                  <span class="free">2 months free</span>
+                </div>
+              </label>
+              <label for="pro">
+                <input type="radio" name="plan" id="pro">
+                <img src="assets/images/icon-pro.svg" alt="">
+                <div>
+                  <span class="plan-title">Pro</span>
+                  <span class="fee pro-fee">
+                    $<span class="price">15</span>
+                    /<span class="monthly-yearly">mo</span>
+                  </span>
+                  <span class="free">2 months free</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="monthly-yearly-wrapper">
+              <span>Monthly</span>
+              <label class="switch" for="toggle" aria-labelledby="pricing">
+                <span class="sr-only" aria-live="polite" id="pricing">Monthly pricing</span>
+                <input type="checkbox" name="toggle" id="toggle" unchecked>
+                <span class="slider round"></span>
+              </label>
+              <span>Yearly</span>
+            </div>
           </div>
+
 
           
           <div class="btn-container">
