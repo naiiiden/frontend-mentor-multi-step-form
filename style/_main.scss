@@ -212,6 +212,7 @@
                 label {
                     flex-direction: column;
                     gap: 2rem;
+                    cursor: pointer;
                 }
             }
 
@@ -219,6 +220,10 @@
                 position: unset;
                 padding: 0;
                 margin-top: 5rem;
+
+                button {
+                    cursor: pointer;
+                }
 
                 button:focus-visible {
                     outline-offset: 3px;

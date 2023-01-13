@@ -265,11 +265,15 @@ header .step-subcontainer .step-info {
   .main-subcontainer fieldset .form-step-2 label {
     flex-direction: column;
     gap: 2rem;
+    cursor: pointer;
   }
   .main-subcontainer fieldset .btn-container {
     position: unset;
     padding: 0;
     margin-top: 5rem;
+  }
+  .main-subcontainer fieldset .btn-container button {
+    cursor: pointer;
   }
   .main-subcontainer fieldset .btn-container button:focus-visible {
     outline-offset: 3px;
