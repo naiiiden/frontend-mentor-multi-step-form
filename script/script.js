@@ -13,8 +13,14 @@ for (let i = 0; i < step2Inputs.length; i++) {
 document.getElementById("toggle").addEventListener("click", () => {
     document.querySelector(".form-step-2").classList.toggle("show-yearly");
     document.querySelector(".form-step-2").classList.contains("show-yearly") 
-        ? Array.from(document.querySelectorAll(".price")).map(x => (console.log(x), x.textContent += "0"))
-        : Array.from(document.querySelectorAll(".price")).map(x => x.textContent = x.textContent.slice(0, -1));
+        ? (
+            Array.from(document.querySelectorAll(".price")).map(price => price.textContent += "0"),
+            Array.from(document.querySelectorAll(".free")).map(free => free.style.display = "block")
+        )
+        : (
+            Array.from(document.querySelectorAll(".price")).map(price => price.textContent = price.textContent.slice(0, -1)),
+            Array.from(document.querySelectorAll(".free")).map(free => free.style.display = "none") 
+        );
 
     document.querySelector(".sr-only").textContent == "Monthly pricing" 
         ? document.querySelector(".sr-only").textContent = "Yearly pricing" 
