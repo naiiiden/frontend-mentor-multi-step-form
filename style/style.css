@@ -300,6 +300,79 @@ header .step-subcontainer .step-info {
     transition: 0.1s;
   }
 }
+.monthly-yearly-wrapper {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background: hsl(217deg, 100%, 97%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.monthly-yearly-wrapper span {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.monthly-yearly-wrapper span.monthly {
+  color: hsl(213deg, 96%, 18%);
+}
+.monthly-yearly-wrapper span.yearly {
+  color: hsl(225deg, 11%, 49%);
+}
+.monthly-yearly-wrapper .sr-only {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.375rem;
+  height: 1.175rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(213deg, 96%, 18%);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.8rem;
+  width: 0.8rem;
+  left: 0.2rem;
+  bottom: 0.19rem;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.175rem);
+  bottom: 0.1775rem;
+}
+
+.slider.round {
+  border-radius: 1rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 body {
   font-family: Ubuntu, "sans-serif";
   background: hsl(217deg, 100%, 97%);
