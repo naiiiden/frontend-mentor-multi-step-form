@@ -39,6 +39,9 @@ header {
         padding: 2rem 5rem 0 1.5rem;
         justify-content: flex-start;
         border-radius: .5rem;
+        background: url("../assets/images/bg-sidebar-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .step-subcontainer {
             display: flex;
