@@ -301,6 +301,7 @@ header .step-subcontainer .step-info {
   }
 }
 .monthly-yearly-wrapper {
+  border-radius: 0.375rem;
   margin-top: 1.5rem;
   padding: 0.75rem;
   background: hsl(217deg, 100%, 97%);
@@ -325,21 +326,18 @@ header .step-subcontainer .step-info {
   width: 1px;
   height: 1px;
 }
-
-.switch {
+.monthly-yearly-wrapper .switch {
   position: relative;
   display: inline-block;
   width: 2.375rem;
   height: 1.175rem;
 }
-
-.switch input {
+.monthly-yearly-wrapper .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
-.slider {
+.monthly-yearly-wrapper .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -348,8 +346,7 @@ header .step-subcontainer .step-info {
   bottom: 0;
   background: hsl(213deg, 96%, 18%);
 }
-
-.slider:before {
+.monthly-yearly-wrapper .slider:before {
   position: absolute;
   content: "";
   height: 0.8rem;
@@ -359,17 +356,14 @@ header .step-subcontainer .step-info {
   background-color: white;
   transition: 0.4s;
 }
-
-input:checked + .slider:before {
+.monthly-yearly-wrapper input:checked + .slider:before {
   transform: translateX(1.175rem);
   bottom: 0.1775rem;
 }
-
-.slider.round {
+.monthly-yearly-wrapper .slider.round {
   border-radius: 1rem;
 }
-
-.slider.round:before {
+.monthly-yearly-wrapper .slider.round:before {
   border-radius: 50%;
 }
 
