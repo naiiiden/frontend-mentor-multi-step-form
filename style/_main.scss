@@ -64,60 +64,138 @@
         }
 
         .form-step-2 {
-            display: grid;
-            gap: .75rem;
-            border: none;
-
-
-
-            label {
-                position: relative;
-                border: 1px solid $light-gray;
-                border-radius: .375rem;
-                padding: 1rem;
-                display: flex;
-                align-items: flex-start;
-                gap: 1rem;
-                background: $white;
-                transition: border .1s;
-
-                &:focus-within {
-                    border: 1px solid $purplish-blue;
-                    background: $magnolia;
-                }
-
-                &:hover {
-                    border: 1px solid $purplish-blue !important;
+            .fs2-inner {
+                display: grid;
+                gap: .75rem;
+                border: none;
+    
+                label {
+                    position: relative;
+                    border: 1px solid $light-gray;
+                    border-radius: .375rem;
+                    padding: 1rem;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    background: $white;
                     transition: border .1s;
-                }
-
-                input {
-                    position: absolute;
-                    border: none;
-                    background: none;
-                    opacity: 0;
-                }
-
-                div {
-                    display: grid;
-                    gap: .125rem;
-
-                    .plan-title {
-                        color: $marine-blue;
-                        font-weight: 500;
+    
+                    &:focus-within {
+                        border: 1px solid $purplish-blue;
+                        background: $magnolia;
                     }
-                    
-                    .fee {
-                        font-size: .875rem;
-                        display: flex;
+    
+                    &:hover {
+                        border: 1px solid $purplish-blue !important;
+                        transition: border .1s;
+                    }
+    
+                    input {
+                        position: absolute;
+                        border: none;
+                        background: none;
+                        opacity: 0;
+                    }
+    
+                    div {
+                        display: grid;
+                        gap: .125rem;
+    
+                        .plan-title {
+                            color: $marine-blue;
+                            font-weight: 500;
+                        }
+                        
+                        .fee {
+                            font-size: .875rem;
+                            display: flex;
+                            color: $cool-gray;
+                        }
+    
+                        .free {
+                            font-size: .875rem;
+                            color: $marine-blue;
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .monthly-yearly-wrapper {
+                border-radius: .375rem;
+                margin-top: 1.5rem;
+                padding: .75rem;
+                background: $magnolia;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                gap: 1rem;
+            
+                span {
+                    font-size: .875rem;
+                    font-weight: 500;
+            
+                    &.monthly {
+                        color: $marine-blue;
+                    }
+            
+                    &.yearly {
                         color: $cool-gray;
                     }
-
-                    .free {
-                        font-size: .875rem;
-                        color: $marine-blue;
-                        display: none;
-                    }
+                }
+            
+                .sr-only {
+                    position: absolute;
+                    opacity: 0;
+                    width: 1px;
+                    height: 1px;
+                }
+            
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 2.375rem;
+                    height: 1.175rem;
+                }
+                
+                .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: $marine-blue;
+                }
+                
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: .8rem;
+                    width: .8rem;
+                    left: .2rem;
+                    bottom: .19rem;
+                    background-color: white;
+                    transition: .4s;
+                }
+                
+                input:checked + .slider:before {
+                    transform: translateX(1.175rem);
+                    bottom: .1775rem;
+                }
+                
+                .slider.round {
+                    border-radius: 1rem;
+                }
+                
+                .slider.round:before {
+                    border-radius: 50%;
                 }
             }
         }
@@ -160,84 +238,6 @@
                 color: $magnolia;
                 display: none;                
             }
-        }
-    }
-
-    .monthly-yearly-wrapper {
-        border-radius: .375rem;
-        margin-top: 1.5rem;
-        padding: .75rem;
-        background: $magnolia;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        gap: 1rem;
-    
-        span {
-            font-size: .875rem;
-            font-weight: 500;
-    
-            &.monthly {
-                color: $marine-blue;
-            }
-    
-            &.yearly {
-                color: $cool-gray;
-            }
-        }
-    
-        .sr-only {
-            position: absolute;
-            opacity: 0;
-            width: 1px;
-            height: 1px;
-        }
-    
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 2.375rem;
-            height: 1.175rem;
-        }
-          
-        .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: $marine-blue;
-        }
-          
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: .8rem;
-            width: .8rem;
-            left: .2rem;
-            bottom: .19rem;
-            background-color: white;
-            transition: .4s;
-        }
-          
-        input:checked + .slider:before {
-            transform: translateX(1.175rem);
-            bottom: .1775rem;
-        }
-          
-        .slider.round {
-            border-radius: 1rem;
-        }
-          
-        .slider.round:before {
-            border-radius: 50%;
         }
     }
 }
@@ -285,7 +285,7 @@
                 }
             }
 
-            .form-step-2 {
+            .fs2-inner {
                 grid-auto-flow: column;
                 grid-template-columns: repeat(3, 1fr);
 
@@ -293,6 +293,11 @@
                     flex-direction: column;
                     gap: 2rem;
                     cursor: pointer;
+                }
+
+                .monthly-yearly-wrapper {
+                    margin: 2rem 1rem 0 0;
+                    gap: 1.5rem;
                 }
             }
 
@@ -335,11 +340,6 @@
                         transition: .1s;
                     }
                 }
-            }
-
-            .monthly-yearly-wrapper {
-                margin: 2rem 1rem 0 0;
-                gap: 1.5rem;
             }
         }
     }
