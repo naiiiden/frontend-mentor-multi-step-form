@@ -259,10 +259,31 @@ header .step-subcontainer .step-info {
   gap: 0.75rem;
 }
 .main-subcontainer fieldset .form-step-3 label {
-  border: 1px solid hsl(243deg, 100%, 62%);
+  padding: 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid hsl(229deg, 24%, 87%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
 }
 .main-subcontainer fieldset .form-step-3 label div {
   display: grid;
+}
+.main-subcontainer fieldset .form-step-3 label div .addon {
+  color: hsl(213deg, 96%, 18%);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.main-subcontainer fieldset .form-step-3 label div .addon-desc {
+  color: hsl(225deg, 11%, 49%);
+}
+.main-subcontainer fieldset .form-step-3 label .fee {
+  color: hsl(243deg, 100%, 62%);
 }
 .main-subcontainer fieldset .btn-container {
   background: hsl(0deg, 0%, 100%);

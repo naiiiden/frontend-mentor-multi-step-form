@@ -207,10 +207,33 @@
             gap: .75rem;
 
             label {
-                border: 1px solid $purplish-blue;
+                padding: 1rem;
+                border-radius: 0.375rem;
+                border: 1px solid $light-gray;
+                -webkit-appearance: none;
+                appearance: none;
+                display: grid;
+                grid-auto-flow: column;
+                align-items: center;
+                gap: .75rem;
+                font-size: .875rem;
 
                 div {
                     display: grid;
+
+                    .addon {
+                        color: $marine-blue;
+                        font-weight: 500;
+                        font-size: 1rem;
+                    }
+    
+                    .addon-desc {
+                        color: $cool-gray;
+                    }
+                }
+
+                .fee {
+                    color: $purplish-blue;
                 }
 
             }
