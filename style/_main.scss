@@ -64,6 +64,8 @@
         }
 
         .form-step-2 {
+            display: none;
+
             .fs2-inner {
                 display: grid;
                 gap: .75rem;
@@ -197,6 +199,20 @@
                 .slider.round:before {
                     border-radius: 50%;
                 }
+            }
+        }
+
+        .form-step-3 {
+            display: grid;
+            gap: .75rem;
+
+            label {
+                border: 1px solid $purplish-blue;
+
+                div {
+                    display: grid;
+                }
+
             }
         }
 
