@@ -383,18 +383,22 @@ header .step-subcontainer .step-info {
   .main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child) {
     margin-bottom: 1.5rem;
   }
-  .main-subcontainer fieldset .fs2-inner {
+  .main-subcontainer fieldset .form-step-2 .fs2-inner {
     grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
-  .main-subcontainer fieldset .fs2-inner label {
+  .main-subcontainer fieldset .form-step-2 .fs2-inner label {
     flex-direction: column;
     gap: 2rem;
     cursor: pointer;
   }
-  .main-subcontainer fieldset .fs2-inner .monthly-yearly-wrapper {
+  .main-subcontainer fieldset .form-step-2 .fs2-inner .monthly-yearly-wrapper {
     margin: 2rem 1rem 0 0;
     gap: 1.5rem;
+  }
+  .main-subcontainer fieldset .form-step-3 {
+    gap: 1rem;
   }
   .main-subcontainer fieldset .form-step-3 label:focus, .main-subcontainer fieldset .form-step-3 label:hover {
     outline-offset: 4px;

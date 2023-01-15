@@ -350,23 +350,28 @@
                 }
             }
 
-            .fs2-inner {
-                grid-auto-flow: column;
-                grid-template-columns: repeat(3, 1fr);
-
-                label {
-                    flex-direction: column;
-                    gap: 2rem;
-                    cursor: pointer;
-                }
-
-                .monthly-yearly-wrapper {
-                    margin: 2rem 1rem 0 0;
-                    gap: 1.5rem;
+            .form-step-2 {
+                .fs2-inner {
+                    grid-auto-flow: column;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1rem;
+    
+                    label {
+                        flex-direction: column;
+                        gap: 2rem;
+                        cursor: pointer;
+                    }
+    
+                    .monthly-yearly-wrapper {
+                        margin: 2rem 1rem 0 0;
+                        gap: 1.5rem;
+                    }
                 }
             }
 
             .form-step-3 {
+                gap: 1rem;
+
                 label:focus, label:hover {
                     outline-offset: 4px;
                     outline-width: 1px;
