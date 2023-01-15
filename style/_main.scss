@@ -218,6 +218,32 @@
                 gap: .75rem;
                 font-size: .875rem;
 
+                input {
+                    opacity: 0;
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                input:checked + .checkmark {
+                    background: $purplish-blue;
+                    border: 1px solid $purplish-blue;
+                    
+                    &.checkmark::before {
+                        display: flex;
+                        content: "";
+                        height: 100%;
+                        background: url("../assets/images/icon-checkmark.svg") no-repeat center;
+                    }
+                }
+
+                .checkmark {
+                    position: relative;
+                    border-radius: 0.25rem;
+                    border: 1px solid $light-gray;
+                    width: 1.125rem;
+                    height: 1.125rem;
+                }
+
                 div {
                     display: grid;
 
