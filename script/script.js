@@ -1,5 +1,5 @@
 // form step 2 input container style when focused
-let step2Inputs = document.querySelectorAll(".form-step-2 input");
+let step2Inputs = document.querySelectorAll(".form-step-2 input[type='radio']");
 for (let i = 0; i < step2Inputs.length; i++) {
     step2Inputs[i].addEventListener("change", () => {
         for (let i = 0; i < step2Inputs.length; i++) {
