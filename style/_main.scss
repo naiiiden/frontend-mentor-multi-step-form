@@ -366,6 +366,15 @@
                 }
             }
 
+            .form-step-3 {
+                label:focus, label:hover {
+                    outline-offset: 4px;
+                    outline-width: 1px;
+                    outline-color: $purplish-blue;
+                    border: 1px solid $purplish-blue !important;
+                }
+            }
+
             .btn-container {
                 position: unset;
                 padding: 0;
