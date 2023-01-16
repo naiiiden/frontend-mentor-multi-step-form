@@ -372,11 +372,13 @@
             .form-step-3 {
                 gap: 1rem;
 
-                label:focus-within, label:hover {
-                    outline-offset: 4px;
-                    outline-width: 1px;
-                    outline-color: $purplish-blue;
+                label:hover {
                     border: 1px solid $purplish-blue !important;
+                }
+
+                label:focus-within {
+                    outline: 1px solid $purplish-blue;
+                    outline-offset: 4px;
                 }
             }
 
