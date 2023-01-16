@@ -64,7 +64,7 @@
         }
 
         .form-step-2 {
-            // display: none;
+            display: none;
 
             .fs2-inner {
                 display: grid;
@@ -364,12 +364,19 @@
                         gap: 2rem;
                         cursor: pointer;
                     }
-    
                 }
+
                 .monthly-yearly-wrapper {
                     margin: 2rem 0 0 0;
                     padding-right: 1.5rem;
                     gap: 1.5rem;
+
+                    label:focus-within, label:hover {
+                        .slider {
+                            outline: 1px solid $marine-blue;
+                            outline-offset: 4px;
+                        }
+                    }
                 }
             }
 
