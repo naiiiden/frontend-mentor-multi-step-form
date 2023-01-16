@@ -34,12 +34,9 @@ document.getElementById("toggle").addEventListener("click", () => {
 });
 
 // form step 3 input container style when focused
-let step3Inputs = document.querySelectorAll(".form-step-3 input[type='checkbox']");
-for (let i = 0; i < step3Inputs.length; i++) {
-    step3Inputs[i].addEventListener("click", () => {
-        for (let i = 0; i < step3Inputs.length; i++) {
-            step3Inputs[i].parentNode.style.background = step3Inputs[i].checked ? "hsl(217, 100%, 97%)" : "#fff";
-            step3Inputs[i].parentNode.style.border = step3Inputs[i].checked ? "1px solid hsl(243, 100%, 62%)" : "1px solid hsl(229, 24%, 87%)";
-        };
+document.querySelectorAll(".form-step-3 input[type='checkbox']").forEach(input => {
+    input.addEventListener("change", () => {
+        input.parentNode.style.background = input.checked == true ? "hsl(217, 100%, 97%)" : "#fff";
+        input.parentNode.style.border = input.checked == true ? "1px solid hsl(243, 100%, 62%)" : "1px solid hsl(229, 24%, 87%)";
     });
-};
+});
