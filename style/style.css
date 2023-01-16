@@ -400,7 +400,7 @@ header .step-subcontainer .step-info {
   .main-subcontainer fieldset .form-step-3 {
     gap: 1rem;
   }
-  .main-subcontainer fieldset .form-step-3 label:focus, .main-subcontainer fieldset .form-step-3 label:hover {
+  .main-subcontainer fieldset .form-step-3 label:focus-within, .main-subcontainer fieldset .form-step-3 label:hover {
     outline-offset: 4px;
     outline-width: 1px;
     outline-color: hsl(243deg, 100%, 62%);
