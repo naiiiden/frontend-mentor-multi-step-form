@@ -137,9 +137,6 @@ header .step-subcontainer .step-info {
 .main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child) {
   margin-bottom: 1rem;
 }
-.main-subcontainer fieldset .form-step-2 {
-  display: none;
-}
 .main-subcontainer fieldset .form-step-2 .fs2-inner {
   display: grid;
   gap: 0.75rem;
@@ -396,8 +393,9 @@ header .step-subcontainer .step-info {
     gap: 2rem;
     cursor: pointer;
   }
-  .main-subcontainer fieldset .form-step-2 .fs2-inner .monthly-yearly-wrapper {
-    margin: 2rem 1rem 0 0;
+  .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper {
+    margin: 2rem 0 0 0;
+    padding-right: 1.5rem;
     gap: 1.5rem;
   }
   .main-subcontainer fieldset .form-step-3 {
