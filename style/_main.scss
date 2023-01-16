@@ -213,8 +213,10 @@
                 -webkit-appearance: none;
                 appearance: none;
                 display: grid;
+                grid-template-columns: 18px 1fr max(60px);
                 grid-auto-flow: column;
                 align-items: center;
+                justify-content: start;
                 gap: .75rem;
                 font-size: .875rem;
 
@@ -260,6 +262,7 @@
 
                 .fee {
                     color: $purplish-blue;
+                    justify-self: end;
                 }
 
             }

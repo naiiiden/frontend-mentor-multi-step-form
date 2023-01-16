@@ -266,8 +266,10 @@ header .step-subcontainer .step-info {
   -moz-appearance: none;
        appearance: none;
   display: grid;
+  grid-template-columns: 18px 1fr 60px;
   grid-auto-flow: column;
   align-items: center;
+  justify-content: start;
   gap: 0.75rem;
   font-size: 0.875rem;
 }
@@ -306,6 +308,7 @@ header .step-subcontainer .step-info {
 }
 .main-subcontainer fieldset .form-step-3 label .fee {
   color: hsl(243deg, 100%, 62%);
+  justify-self: end;
 }
 .main-subcontainer fieldset .btn-container {
   background: hsl(0deg, 0%, 100%);
