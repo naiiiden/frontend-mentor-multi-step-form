@@ -257,6 +257,7 @@ header .step-subcontainer .step-info {
 .main-subcontainer fieldset .form-step-3 {
   display: grid;
   gap: 0.75rem;
+  display: none;
 }
 .main-subcontainer fieldset .form-step-3 label {
   padding: 1rem;
