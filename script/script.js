@@ -11,7 +11,12 @@ for (let i = 0; i < step2Inputs.length; i++) {
 
 // form step 2 & 4 monthly/yearly toggle
 document.querySelectorAll(".yearly-input").forEach(input => {
-    input.addEventListener("click", () => {
+    input.addEventListener("change", (e) => {
+        document.querySelectorAll(".yearly-input").forEach(input => {
+            if(input !== e.target)
+                input.checked = e.target.checked;
+        });
+
         document.querySelector(".form-step-2").classList.toggle("show-yearly");
         document.querySelector(".form-step-2").classList.contains("show-yearly") 
             ? (
