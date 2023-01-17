@@ -9,28 +9,30 @@ for (let i = 0; i < step2Inputs.length; i++) {
     });
 };
 
-// form step 2 monthly/yearly toggle
-document.getElementById("toggle").addEventListener("click", () => {
-    document.querySelector(".form-step-2").classList.toggle("show-yearly");
-    document.querySelector(".form-step-2").classList.contains("show-yearly") 
-        ? (
-            Array.from(document.querySelectorAll(".price")).map(price => price.textContent += "0"),
-            Array.from(document.querySelectorAll(".monthly-yearly")).map(moYr => moYr.textContent = "yr"),
-            Array.from(document.querySelectorAll(".free")).map(free => free.style.display = "block"),
-            document.querySelector(".yearly").style.color = "hsl(213, 96%, 18%)",
-            document.querySelector(".monthly").style.color = "hsl(225, 11%, 49%)"
-        )
-        : (
-            Array.from(document.querySelectorAll(".price")).map(price => price.textContent = price.textContent.slice(0, -1)),
-            Array.from(document.querySelectorAll(".monthly-yearly")).map(moYr => moYr.textContent = "mo"),
-            Array.from(document.querySelectorAll(".free")).map(free => free.style.display = "none"), 
-            document.querySelector(".yearly").style.color = "hsl(225, 11%, 49%)",
-            document.querySelector(".monthly").style.color = "hsl(213, 96%, 18%)"
-        );
-
-    document.querySelector(".sr-only").textContent == "Monthly pricing" 
-        ? document.querySelector(".sr-only").textContent = "Yearly pricing" 
-        : document.querySelector(".sr-only").textContent = "Monthly pricing";
+// form step 2 & 4 monthly/yearly toggle
+document.querySelectorAll(".yearly-input").forEach(input => {
+    input.addEventListener("click", () => {
+        document.querySelector(".form-step-2").classList.toggle("show-yearly");
+        document.querySelector(".form-step-2").classList.contains("show-yearly") 
+            ? (
+                Array.from(document.querySelectorAll(".price")).map(price => price.textContent += "0"),
+                Array.from(document.querySelectorAll(".monthly-yearly")).map(moYr => moYr.textContent = "yr"),
+                Array.from(document.querySelectorAll(".free")).map(free => free.style.display = "block"),
+                document.querySelector(".yearly").style.color = "hsl(213, 96%, 18%)",
+                document.querySelector(".monthly").style.color = "hsl(225, 11%, 49%)"
+            )
+            : (
+                Array.from(document.querySelectorAll(".price")).map(price => price.textContent = price.textContent.slice(0, -1)),
+                Array.from(document.querySelectorAll(".monthly-yearly")).map(moYr => moYr.textContent = "mo"),
+                Array.from(document.querySelectorAll(".free")).map(free => free.style.display = "none"), 
+                document.querySelector(".yearly").style.color = "hsl(225, 11%, 49%)",
+                document.querySelector(".monthly").style.color = "hsl(213, 96%, 18%)"
+            );
+    
+        document.querySelector(".sr-only").textContent == "Monthly pricing" 
+            ? document.querySelector(".sr-only").textContent = "Yearly pricing" 
+            : document.querySelector(".sr-only").textContent = "Monthly pricing";
+    });
 });
 
 // form step 3 input container style when focused
