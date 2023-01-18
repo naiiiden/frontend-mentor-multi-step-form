@@ -286,6 +286,11 @@
                         border-bottom: 1px solid $light-gray;
                         padding-bottom: 1.25rem;    
 
+                        p {
+                            color: $marine-blue;
+                            font-weight: 500;
+                        }
+
                         .switch {
                             span {
                                 color: $cool-gray;
@@ -299,10 +304,20 @@
                                 opacity: 0;
                             }
                         }
+
+                        .fee {
+                            color: $marine-blue;
+                            font-weight: 700;
+                        }
+                    }
+
+                    p {
+                        color: $cool-gray;
                     }
 
                     .fee {
                         justify-self: end;
+                        color: $marine-blue;
                     }
                 }
             }

@@ -327,6 +327,10 @@ header .step-subcontainer .step-info {
   border-bottom: 1px solid hsl(229deg, 24%, 87%);
   padding-bottom: 1.25rem;
 }
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container p, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container p {
+  color: hsl(213deg, 96%, 18%);
+  font-weight: 500;
+}
 .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch span, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .switch span {
   color: hsl(225deg, 11%, 49%);
   text-decoration: underline;
@@ -337,8 +341,16 @@ header .step-subcontainer .step-info {
   height: 0;
   opacity: 0;
 }
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .fee {
+  color: hsl(213deg, 96%, 18%);
+  font-weight: 700;
+}
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container p, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container p {
+  color: hsl(225deg, 11%, 49%);
+}
 .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container .fee {
   justify-self: end;
+  color: hsl(213deg, 96%, 18%);
 }
 .main-subcontainer fieldset .btn-container {
   background: hsl(0deg, 0%, 100%);
