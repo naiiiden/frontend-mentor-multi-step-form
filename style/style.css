@@ -315,6 +315,20 @@ header .step-subcontainer .step-info {
   background: hsl(217deg, 100%, 97%);
   border-radius: 0.5rem;
   padding: 1rem;
+  display: grid;
+  gap: 1.25rem;
+}
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container {
+  border-bottom: 1px solid hsl(229deg, 24%, 87%);
+  padding-bottom: 1.25rem;
+}
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container .fee {
+  justify-self: end;
 }
 .main-subcontainer fieldset .btn-container {
   background: hsl(0deg, 0%, 100%);
