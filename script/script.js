@@ -17,8 +17,7 @@ document.querySelectorAll(".yearly-input").forEach(input => {
                 input.checked = e.target.checked;
         });
 
-        document.querySelector(".form-step-2").classList.toggle("show-yearly");
-        document.querySelector(".form-step-2").classList.contains("show-yearly") 
+        (document.querySelector(".form-step-2").classList.toggle("show-yearly") && document.querySelector(".form-step-2").classList.contains("show-yearly"))
             ? (
                 Array.from(document.querySelectorAll(".price")).map(price => price.textContent += "0"),
                 Array.from(document.querySelectorAll(".monthly-yearly")).map(moYr => moYr.textContent = "yr"),
