@@ -327,6 +327,16 @@ header .step-subcontainer .step-info {
   border-bottom: 1px solid hsl(229deg, 24%, 87%);
   padding-bottom: 1.25rem;
 }
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch span, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .switch span {
+  color: hsl(225deg, 11%, 49%);
+  text-decoration: underline;
+}
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch input, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .switch input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
 .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container .fee {
   justify-self: end;
 }
