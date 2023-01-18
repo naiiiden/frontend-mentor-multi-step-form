@@ -470,6 +470,16 @@
                 .plan-addons-container {
                     .plan-price-container {
                         .switch {
+                            &:focus-within {
+                                outline: 1px solid $purplish-blue;
+                                outline-offset: 4px;
+                                border-radius: .375rem;
+
+                                span {
+                                    color: $purplish-blue;
+                                }
+                            }
+
                             span {
                                 transition: .1s;
 
