@@ -466,6 +466,25 @@
                 }
             }
 
+            .form-step-4 {
+                .plan-addons-container {
+                    .plan-price-container {
+                        .switch {
+                            span {
+                                transition: .1s;
+
+                                &:hover {
+                                    color: $purplish-blue;
+                                    cursor: pointer;
+                                    transition: .1s;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
             .btn-container {
                 position: unset;
                 padding: 0;

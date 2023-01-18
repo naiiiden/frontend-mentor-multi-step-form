@@ -472,6 +472,14 @@ header .step-subcontainer .step-info {
     outline: 1px solid hsl(243deg, 100%, 62%);
     outline-offset: 4px;
   }
+  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span {
+    transition: 0.1s;
+  }
+  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span:hover {
+    color: hsl(243deg, 100%, 62%);
+    cursor: pointer;
+    transition: 0.1s;
+  }
   .main-subcontainer fieldset .btn-container {
     position: unset;
     padding: 0;
