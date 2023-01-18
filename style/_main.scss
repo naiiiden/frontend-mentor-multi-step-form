@@ -64,7 +64,7 @@
         }
 
         .form-step-2 {
-            // display: none;
+            display: none;
 
             .fs2-inner {
                 display: grid;
@@ -266,6 +266,14 @@
                     justify-self: end;
                 }
 
+            }
+        }
+
+        .form-step-4 {
+            .plan-addons-container {
+                background: $magnolia;
+                border-radius: .5rem;
+                padding: 1rem;
             }
         }
 

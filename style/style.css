@@ -137,6 +137,9 @@ header .step-subcontainer .step-info {
 .main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child) {
   margin-bottom: 1rem;
 }
+.main-subcontainer fieldset .form-step-2 {
+  display: none;
+}
 .main-subcontainer fieldset .form-step-2 .fs2-inner {
   display: grid;
   gap: 0.75rem;
@@ -307,6 +310,11 @@ header .step-subcontainer .step-info {
 .main-subcontainer fieldset .form-step-3 label .fee {
   color: hsl(243deg, 100%, 62%);
   justify-self: end;
+}
+.main-subcontainer fieldset .form-step-4 .plan-addons-container {
+  background: hsl(217deg, 100%, 97%);
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 .main-subcontainer fieldset .btn-container {
   background: hsl(0deg, 0%, 100%);
