@@ -352,6 +352,21 @@ header .step-subcontainer .step-info {
   justify-self: end;
   color: hsl(213deg, 96%, 18%);
 }
+.main-subcontainer fieldset .form-step-4 .total-price-container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 1rem 1rem 0 1rem;
+}
+.main-subcontainer fieldset .form-step-4 .total-price-container p {
+  color: hsl(225deg, 11%, 49%);
+}
+.main-subcontainer fieldset .form-step-4 .total-price-container .fee {
+  justify-self: end;
+  color: hsl(243deg, 100%, 62%);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
 .main-subcontainer fieldset .btn-container {
   background: hsl(0deg, 0%, 100%);
   position: fixed;
