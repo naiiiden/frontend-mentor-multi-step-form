@@ -1,3 +1,35 @@
+let stepIndex = 1;
+showSteps(stepIndex);
+
+function plusStep(n) {
+    showSteps(stepIndex += n);
+}
+  
+function currentStep(n) {
+    showSteps(stepIndex = n);
+}
+
+function showSteps(n) {
+    let i;
+    let steps = document.getElementsByClassName("step");
+    if (n > steps.length) {stepIndex = 1}    
+    if (n < 1) {stepIndex = steps.length}
+    for (i = 0; i < steps.length; i++) {
+      steps[i].style.display = "none";  
+    }
+    steps[stepIndex-1].style.display = "grid";  
+}
+
+document.querySelector(".btn-back").addEventListener("click", (e) => {
+    e.preventDefault();
+    plusStep(-1);
+});
+
+document.querySelector(".btn-next").addEventListener("click", (e) => {
+    e.preventDefault();
+    plusStep(1);
+});
+
 // form step 2 input container style when focused
 let step2Inputs = document.querySelectorAll(".form-step-2 input[type='radio']");
 for (let i = 0; i < step2Inputs.length; i++) {

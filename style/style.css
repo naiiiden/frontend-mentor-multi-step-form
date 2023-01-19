@@ -380,7 +380,6 @@ header .step-subcontainer .step-info {
   font-size: 0.875rem;
   background: none;
   color: hsl(225deg, 11%, 49%);
-  display: none;
 }
 .main-subcontainer fieldset .btn-container .btn-next, .form-step-final fieldset .btn-container .btn-next {
   border: none;
