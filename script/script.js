@@ -1,3 +1,4 @@
+let steps = document.getElementsByClassName("step");
 let stepIndex = 1;
 showSteps(stepIndex);
 
@@ -10,11 +11,7 @@ function currentStep(n) {
 }
 
 function showSteps(n) {
-    let i;
-    let steps = document.getElementsByClassName("step");
-    if (n > steps.length) {stepIndex = 1}    
-    if (n < 1) {stepIndex = steps.length}
-    for (i = 0; i < steps.length; i++) {
+    for (let i = 0; i < steps.length; i++) {
       steps[i].style.display = "none";  
     }
     steps[stepIndex-1].style.display = "grid";  
@@ -22,12 +19,12 @@ function showSteps(n) {
 
 document.querySelector(".btn-back").addEventListener("click", (e) => {
     e.preventDefault();
-    plusStep(-1);
+    stepIndex != 1 ? plusStep(-1) : "";
 });
 
 document.querySelector(".btn-next").addEventListener("click", (e) => {
     e.preventDefault();
-    plusStep(1);
+    stepIndex != steps.length ? plusStep(1) : "";
 });
 
 // form step 2 input container style when focused
