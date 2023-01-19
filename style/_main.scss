@@ -20,10 +20,8 @@
 
     fieldset {
         border: none;
-        display: none;
 
         .form-step-1 {
-            display: none;
             font-size: .75rem;
     
             .label-error-container {
@@ -65,8 +63,6 @@
         }
 
         .form-step-2 {
-            display: none;
-
             .fs2-inner {
                 display: grid;
                 gap: .75rem;
@@ -206,7 +202,6 @@
         .form-step-3 {
             display: grid;
             gap: .75rem;
-            display: none;
 
             label {
                 padding: 1rem;
@@ -271,8 +266,6 @@
         }
 
         .form-step-4 {
-            display: none;
-
             .plan-addons-container {
                 background: $magnolia;
                 border-radius: .5rem;
@@ -413,7 +406,7 @@
     body {
         display: grid;
         place-content: center;
-        height: 100vh;
+        min-height: 100vh;
     }
     
     .header-main-container {

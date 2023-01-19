@@ -94,10 +94,8 @@ header .step-subcontainer .step-info {
 }
 .main-subcontainer fieldset, .form-step-final fieldset {
   border: none;
-  display: none;
 }
 .main-subcontainer fieldset .form-step-1, .form-step-final fieldset .form-step-1 {
-  display: none;
   font-size: 0.75rem;
 }
 .main-subcontainer fieldset .form-step-1 .label-error-container, .form-step-final fieldset .form-step-1 .label-error-container {
@@ -137,9 +135,6 @@ header .step-subcontainer .step-info {
 }
 .main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .form-step-final fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .form-step-final fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child), .form-step-final fieldset .form-step-1 #tel-input:not(:last-child) {
   margin-bottom: 1rem;
-}
-.main-subcontainer fieldset .form-step-2, .form-step-final fieldset .form-step-2 {
-  display: none;
 }
 .main-subcontainer fieldset .form-step-2 .fs2-inner, .form-step-final fieldset .form-step-2 .fs2-inner {
   display: grid;
@@ -258,7 +253,6 @@ header .step-subcontainer .step-info {
 .main-subcontainer fieldset .form-step-3, .form-step-final fieldset .form-step-3 {
   display: grid;
   gap: 0.75rem;
-  display: none;
 }
 .main-subcontainer fieldset .form-step-3 label, .form-step-final fieldset .form-step-3 label {
   padding: 1rem;
@@ -311,9 +305,6 @@ header .step-subcontainer .step-info {
 .main-subcontainer fieldset .form-step-3 label .fee, .form-step-final fieldset .form-step-3 label .fee {
   color: hsl(243deg, 100%, 62%);
   justify-self: end;
-}
-.main-subcontainer fieldset .form-step-4, .form-step-final fieldset .form-step-4 {
-  display: none;
 }
 .main-subcontainer fieldset .form-step-4 .plan-addons-container, .form-step-final fieldset .form-step-4 .plan-addons-container {
   background: hsl(217deg, 100%, 97%);
@@ -435,7 +426,7 @@ header .step-subcontainer .step-info {
   body {
     display: grid;
     place-content: center;
-    height: 100vh;
+    min-height: 100vh;
   }
   .header-main-container {
     display: flex;
