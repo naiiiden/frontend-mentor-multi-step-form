@@ -20,6 +20,7 @@
 
     fieldset {
         border: none;
+        display: none;
 
         .form-step-1 {
             display: none;
@@ -270,6 +271,8 @@
         }
 
         .form-step-4 {
+            display: none;
+
             .plan-addons-container {
                 background: $magnolia;
                 border-radius: .5rem;

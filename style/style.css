@@ -94,6 +94,7 @@ header .step-subcontainer .step-info {
 }
 .main-subcontainer fieldset {
   border: none;
+  display: none;
 }
 .main-subcontainer fieldset .form-step-1 {
   display: none;
@@ -310,6 +311,9 @@ header .step-subcontainer .step-info {
 .main-subcontainer fieldset .form-step-3 label .fee {
   color: hsl(243deg, 100%, 62%);
   justify-self: end;
+}
+.main-subcontainer fieldset .form-step-4 {
+  display: none;
 }
 .main-subcontainer fieldset .form-step-4 .plan-addons-container {
   background: hsl(217deg, 100%, 97%);
