@@ -14,7 +14,8 @@ function showSteps(n) {
     for (let i = 0; i < steps.length; i++) {
       steps[i].style.display = "none";  
     }
-    steps[stepIndex-1].style.display = "grid";  
+    steps[stepIndex-1].style.display = "grid"; 
+    console.log(stepIndex); 
 }
 
 document.querySelector(".btn-back").addEventListener("click", (e) => {
@@ -25,6 +26,7 @@ document.querySelector(".btn-back").addEventListener("click", (e) => {
 document.querySelector(".btn-next").addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != steps.length ? plusStep(1) : "";
+    stepIndex == steps.length ? document.querySelector("form").style.display = "none" : "";
 });
 
 // form step 2 input container style when focused
