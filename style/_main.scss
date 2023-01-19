@@ -386,6 +386,27 @@
     }
 }
 
+.form-step-final {
+    @extend .main-subcontainer;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: .5rem;
+    padding: 3.75rem 1.25rem;
+
+    img {
+        width: 4rem;
+    }
+
+    h2 {
+        color: $marine-blue;
+    }
+
+    p {
+        color: $cool-gray;
+    }
+}
+
 @media screen and (min-width: 768px) {
     body {
         display: grid;

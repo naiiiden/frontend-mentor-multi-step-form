@@ -75,43 +75,43 @@ header .step-subcontainer .step-info {
     letter-spacing: 0.08rem;
   }
 }
-.main-subcontainer {
+.main-subcontainer, .form-step-final {
   background: hsl(0deg, 0%, 100%);
   border-radius: 0.5rem;
   padding: 1.5rem 1.25rem;
   margin: -4rem 1rem 1rem 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.main-subcontainer .text-container {
+.main-subcontainer .text-container, .form-step-final .text-container {
   margin-bottom: 1.5rem;
 }
-.main-subcontainer .text-container h1 {
+.main-subcontainer .text-container h1, .form-step-final .text-container h1 {
   color: hsl(213deg, 96%, 18%);
   font-size: 1.5rem;
 }
-.main-subcontainer .text-container p {
+.main-subcontainer .text-container p, .form-step-final .text-container p {
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset {
+.main-subcontainer fieldset, .form-step-final fieldset {
   border: none;
   display: none;
 }
-.main-subcontainer fieldset .form-step-1 {
+.main-subcontainer fieldset .form-step-1, .form-step-final fieldset .form-step-1 {
   display: none;
   font-size: 0.75rem;
 }
-.main-subcontainer fieldset .form-step-1 .label-error-container {
+.main-subcontainer fieldset .form-step-1 .label-error-container, .form-step-final fieldset .form-step-1 .label-error-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 0.125rem;
   color: hsl(213deg, 96%, 18%);
 }
-.main-subcontainer fieldset .form-step-1 .label-error-container .error {
+.main-subcontainer fieldset .form-step-1 .label-error-container .error, .form-step-final fieldset .form-step-1 .label-error-container .error {
   justify-self: end;
   color: hsl(354deg, 84%, 57%);
   font-weight: 500;
 }
-.main-subcontainer fieldset .form-step-1 #name-input, .main-subcontainer fieldset .form-step-1 #email-input, .main-subcontainer fieldset .form-step-1 #tel-input {
+.main-subcontainer fieldset .form-step-1 #name-input, .form-step-final fieldset .form-step-1 #name-input, .main-subcontainer fieldset .form-step-1 #email-input, .form-step-final fieldset .form-step-1 #email-input, .main-subcontainer fieldset .form-step-1 #tel-input, .form-step-final fieldset .form-step-1 #tel-input {
   width: 100%;
   padding: 0.625rem;
   border-radius: 0.375rem;
@@ -119,34 +119,34 @@ header .step-subcontainer .step-info {
   color: hsl(213deg, 96%, 18%);
   font-weight: 500;
 }
-.main-subcontainer fieldset .form-step-1 #name-input#name-input:focus, .main-subcontainer fieldset .form-step-1 #name-input#email-input:focus, .main-subcontainer fieldset .form-step-1 #name-input#tel-input:focus, .main-subcontainer fieldset .form-step-1 #name-input#name-input:active, .main-subcontainer fieldset .form-step-1 #name-input#email-input:active, .main-subcontainer fieldset .form-step-1 #name-input#tel-input:active, .main-subcontainer fieldset .form-step-1 #email-input#name-input:focus, .main-subcontainer fieldset .form-step-1 #email-input#email-input:focus, .main-subcontainer fieldset .form-step-1 #email-input#tel-input:focus, .main-subcontainer fieldset .form-step-1 #email-input#name-input:active, .main-subcontainer fieldset .form-step-1 #email-input#email-input:active, .main-subcontainer fieldset .form-step-1 #email-input#tel-input:active, .main-subcontainer fieldset .form-step-1 #tel-input#name-input:focus, .main-subcontainer fieldset .form-step-1 #tel-input#email-input:focus, .main-subcontainer fieldset .form-step-1 #tel-input#tel-input:focus, .main-subcontainer fieldset .form-step-1 #tel-input#name-input:active, .main-subcontainer fieldset .form-step-1 #tel-input#email-input:active, .main-subcontainer fieldset .form-step-1 #tel-input#tel-input:active {
+.main-subcontainer fieldset .form-step-1 #name-input#name-input:focus, .form-step-final fieldset .form-step-1 #name-input#name-input:focus, .main-subcontainer fieldset .form-step-1 #name-input#email-input:focus, .main-subcontainer fieldset .form-step-1 #name-input#tel-input:focus, .main-subcontainer fieldset .form-step-1 #name-input#name-input:active, .form-step-final fieldset .form-step-1 #name-input#name-input:active, .main-subcontainer fieldset .form-step-1 #name-input#email-input:active, .main-subcontainer fieldset .form-step-1 #name-input#tel-input:active, .main-subcontainer fieldset .form-step-1 #email-input#name-input:focus, .main-subcontainer fieldset .form-step-1 #email-input#email-input:focus, .form-step-final fieldset .form-step-1 #email-input#email-input:focus, .main-subcontainer fieldset .form-step-1 #email-input#tel-input:focus, .main-subcontainer fieldset .form-step-1 #email-input#name-input:active, .main-subcontainer fieldset .form-step-1 #email-input#email-input:active, .form-step-final fieldset .form-step-1 #email-input#email-input:active, .main-subcontainer fieldset .form-step-1 #email-input#tel-input:active, .main-subcontainer fieldset .form-step-1 #tel-input#name-input:focus, .main-subcontainer fieldset .form-step-1 #tel-input#email-input:focus, .main-subcontainer fieldset .form-step-1 #tel-input#tel-input:focus, .form-step-final fieldset .form-step-1 #tel-input#tel-input:focus, .main-subcontainer fieldset .form-step-1 #tel-input#name-input:active, .main-subcontainer fieldset .form-step-1 #tel-input#email-input:active, .main-subcontainer fieldset .form-step-1 #tel-input#tel-input:active, .form-step-final fieldset .form-step-1 #tel-input#tel-input:active {
   outline: 1px solid hsl(243deg, 100%, 62%);
   border: 1px solid hsl(243deg, 100%, 62%);
 }
-.main-subcontainer fieldset .form-step-1 #name-input::-moz-placeholder, .main-subcontainer fieldset .form-step-1 #email-input::-moz-placeholder, .main-subcontainer fieldset .form-step-1 #tel-input::-moz-placeholder {
+.main-subcontainer fieldset .form-step-1 #name-input::-moz-placeholder, .form-step-final fieldset .form-step-1 #name-input::-moz-placeholder, .main-subcontainer fieldset .form-step-1 #email-input::-moz-placeholder, .form-step-final fieldset .form-step-1 #email-input::-moz-placeholder, .main-subcontainer fieldset .form-step-1 #tel-input::-moz-placeholder, .form-step-final fieldset .form-step-1 #tel-input::-moz-placeholder {
   font-weight: 500;
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-1 #name-input:-ms-input-placeholder, .main-subcontainer fieldset .form-step-1 #email-input:-ms-input-placeholder, .main-subcontainer fieldset .form-step-1 #tel-input:-ms-input-placeholder {
+.main-subcontainer fieldset .form-step-1 #name-input:-ms-input-placeholder, .form-step-final fieldset .form-step-1 #name-input:-ms-input-placeholder, .main-subcontainer fieldset .form-step-1 #email-input:-ms-input-placeholder, .form-step-final fieldset .form-step-1 #email-input:-ms-input-placeholder, .main-subcontainer fieldset .form-step-1 #tel-input:-ms-input-placeholder, .form-step-final fieldset .form-step-1 #tel-input:-ms-input-placeholder {
   font-weight: 500;
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-1 #name-input::placeholder, .main-subcontainer fieldset .form-step-1 #email-input::placeholder, .main-subcontainer fieldset .form-step-1 #tel-input::placeholder {
+.main-subcontainer fieldset .form-step-1 #name-input::placeholder, .form-step-final fieldset .form-step-1 #name-input::placeholder, .main-subcontainer fieldset .form-step-1 #email-input::placeholder, .form-step-final fieldset .form-step-1 #email-input::placeholder, .main-subcontainer fieldset .form-step-1 #tel-input::placeholder, .form-step-final fieldset .form-step-1 #tel-input::placeholder {
   font-weight: 500;
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child) {
+.main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .form-step-final fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .form-step-final fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child), .form-step-final fieldset .form-step-1 #tel-input:not(:last-child) {
   margin-bottom: 1rem;
 }
-.main-subcontainer fieldset .form-step-2 {
+.main-subcontainer fieldset .form-step-2, .form-step-final fieldset .form-step-2 {
   display: none;
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner {
+.main-subcontainer fieldset .form-step-2 .fs2-inner, .form-step-final fieldset .form-step-2 .fs2-inner {
   display: grid;
   gap: 0.75rem;
   border: none;
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label, .form-step-final fieldset .form-step-2 .fs2-inner label {
   position: relative;
   border: 1px solid hsl(229deg, 24%, 87%);
   border-radius: 0.375rem;
@@ -157,39 +157,39 @@ header .step-subcontainer .step-info {
   background: hsl(0deg, 0%, 100%);
   transition: border 0.1s;
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label:focus-within {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label:focus-within, .form-step-final fieldset .form-step-2 .fs2-inner label:focus-within {
   border: 1px solid hsl(243deg, 100%, 62%);
   background: hsl(217deg, 100%, 97%);
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label:hover {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label:hover, .form-step-final fieldset .form-step-2 .fs2-inner label:hover {
   border: 1px solid hsl(243deg, 100%, 62%) !important;
   transition: border 0.1s;
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label input {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label input, .form-step-final fieldset .form-step-2 .fs2-inner label input {
   position: absolute;
   border: none;
   background: none;
   opacity: 0;
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label div {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label div, .form-step-final fieldset .form-step-2 .fs2-inner label div {
   display: grid;
   gap: 0.125rem;
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label div .plan-title {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label div .plan-title, .form-step-final fieldset .form-step-2 .fs2-inner label div .plan-title {
   color: hsl(213deg, 96%, 18%);
   font-weight: 500;
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label div .fee {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label div .fee, .form-step-final fieldset .form-step-2 .fs2-inner label div .fee {
   font-size: 0.875rem;
   display: flex;
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-2 .fs2-inner label div .free {
+.main-subcontainer fieldset .form-step-2 .fs2-inner label div .free, .form-step-final fieldset .form-step-2 .fs2-inner label div .free {
   font-size: 0.875rem;
   color: hsl(213deg, 96%, 18%);
   display: none;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper {
   border-radius: 0.375rem;
   margin-top: 1.5rem;
   padding: 0.75rem;
@@ -199,34 +199,34 @@ header .step-subcontainer .step-info {
   display: flex;
   gap: 1rem;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper span {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper span, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper span {
   font-size: 0.875rem;
   font-weight: 500;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper span.monthly {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper span.monthly, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper span.monthly {
   color: hsl(213deg, 96%, 18%);
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper span.yearly {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper span.yearly, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper span.yearly {
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .sr-only {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .sr-only, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper .sr-only {
   position: absolute;
   opacity: 0;
   width: 1px;
   height: 1px;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .switch {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .switch, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper .switch {
   position: relative;
   display: inline-block;
   width: 2.375rem;
   height: 1.175rem;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .switch input {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .switch input, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -235,7 +235,7 @@ header .step-subcontainer .step-info {
   bottom: 0;
   background: hsl(213deg, 96%, 18%);
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider:before {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider:before, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper .slider:before {
   position: absolute;
   content: "";
   height: 0.8rem;
@@ -245,22 +245,22 @@ header .step-subcontainer .step-info {
   background-color: white;
   transition: 0.4s;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper input:checked + .slider:before {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper input:checked + .slider:before, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper input:checked + .slider:before {
   transform: translateX(1.175rem);
   bottom: 0.1775rem;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider.round {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider.round, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper .slider.round {
   border-radius: 1rem;
 }
-.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider.round:before {
+.main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper .slider.round:before, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper .slider.round:before {
   border-radius: 50%;
 }
-.main-subcontainer fieldset .form-step-3 {
+.main-subcontainer fieldset .form-step-3, .form-step-final fieldset .form-step-3 {
   display: grid;
   gap: 0.75rem;
   display: none;
 }
-.main-subcontainer fieldset .form-step-3 label {
+.main-subcontainer fieldset .form-step-3 label, .form-step-final fieldset .form-step-3 label {
   padding: 1rem;
   border-radius: 0.375rem;
   border: 1px solid hsl(229deg, 24%, 87%);
@@ -275,103 +275,103 @@ header .step-subcontainer .step-info {
   gap: 0.75rem;
   font-size: 0.875rem;
 }
-.main-subcontainer fieldset .form-step-3 label input {
+.main-subcontainer fieldset .form-step-3 label input, .form-step-final fieldset .form-step-3 label input {
   opacity: 0;
   position: absolute;
   z-index: -1;
 }
-.main-subcontainer fieldset .form-step-3 label input:checked + .checkmark {
+.main-subcontainer fieldset .form-step-3 label input:checked + .checkmark, .form-step-final fieldset .form-step-3 label input:checked + .checkmark {
   background: hsl(243deg, 100%, 62%);
   border: 1px solid hsl(243deg, 100%, 62%);
 }
-.main-subcontainer fieldset .form-step-3 label input:checked + .checkmark.checkmark::before {
+.main-subcontainer fieldset .form-step-3 label input:checked + .checkmark.checkmark::before, .form-step-final fieldset .form-step-3 label input:checked + .checkmark.checkmark::before {
   display: flex;
   content: "";
   height: 100%;
   background: url("../assets/images/icon-checkmark.svg") no-repeat center;
 }
-.main-subcontainer fieldset .form-step-3 label .checkmark {
+.main-subcontainer fieldset .form-step-3 label .checkmark, .form-step-final fieldset .form-step-3 label .checkmark {
   position: relative;
   border-radius: 0.25rem;
   border: 1px solid hsl(229deg, 24%, 87%);
   width: 1.125rem;
   height: 1.125rem;
 }
-.main-subcontainer fieldset .form-step-3 label div {
+.main-subcontainer fieldset .form-step-3 label div, .form-step-final fieldset .form-step-3 label div {
   display: grid;
 }
-.main-subcontainer fieldset .form-step-3 label div .addon {
+.main-subcontainer fieldset .form-step-3 label div .addon, .form-step-final fieldset .form-step-3 label div .addon {
   color: hsl(213deg, 96%, 18%);
   font-weight: 500;
   font-size: 1rem;
 }
-.main-subcontainer fieldset .form-step-3 label div .addon-desc {
+.main-subcontainer fieldset .form-step-3 label div .addon-desc, .form-step-final fieldset .form-step-3 label div .addon-desc {
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-3 label .fee {
+.main-subcontainer fieldset .form-step-3 label .fee, .form-step-final fieldset .form-step-3 label .fee {
   color: hsl(243deg, 100%, 62%);
   justify-self: end;
 }
-.main-subcontainer fieldset .form-step-4 {
+.main-subcontainer fieldset .form-step-4, .form-step-final fieldset .form-step-4 {
   display: none;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container, .form-step-final fieldset .form-step-4 .plan-addons-container {
   background: hsl(217deg, 100%, 97%);
   border-radius: 0.5rem;
   padding: 1rem;
   display: grid;
   gap: 1.25rem;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container, .form-step-final fieldset .form-step-4 .plan-addons-container .addon-price-container {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container {
   border-bottom: 1px solid hsl(229deg, 24%, 87%);
   padding-bottom: 1.25rem;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container p, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container p {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container p, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container p, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container p {
   color: hsl(213deg, 96%, 18%);
   font-weight: 500;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch span, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .switch span {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch span, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch span, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .switch span {
   color: hsl(225deg, 11%, 49%);
   text-decoration: underline;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch input, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .switch input {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch input, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .switch input, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .switch input {
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .fee {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .fee, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container.plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container.plan-price-container .fee {
   color: hsl(213deg, 96%, 18%);
   font-weight: 700;
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container p, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container p {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container p, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container p, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container p, .form-step-final fieldset .form-step-4 .plan-addons-container .addon-price-container p {
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container .fee {
+.main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .fee, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container .fee, .main-subcontainer fieldset .form-step-4 .plan-addons-container .addon-price-container .fee, .form-step-final fieldset .form-step-4 .plan-addons-container .addon-price-container .fee {
   justify-self: end;
   color: hsl(213deg, 96%, 18%);
 }
-.main-subcontainer fieldset .form-step-4 .total-price-container {
+.main-subcontainer fieldset .form-step-4 .total-price-container, .form-step-final fieldset .form-step-4 .total-price-container {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   padding: 1rem 1rem 0 1rem;
 }
-.main-subcontainer fieldset .form-step-4 .total-price-container p {
+.main-subcontainer fieldset .form-step-4 .total-price-container p, .form-step-final fieldset .form-step-4 .total-price-container p {
   color: hsl(225deg, 11%, 49%);
 }
-.main-subcontainer fieldset .form-step-4 .total-price-container .fee {
+.main-subcontainer fieldset .form-step-4 .total-price-container .fee, .form-step-final fieldset .form-step-4 .total-price-container .fee {
   justify-self: end;
   color: hsl(243deg, 100%, 62%);
   font-weight: 700;
   font-size: 1.125rem;
 }
-.main-subcontainer fieldset .btn-container {
+.main-subcontainer fieldset .btn-container, .form-step-final fieldset .btn-container {
   background: hsl(0deg, 0%, 100%);
   position: fixed;
   bottom: 0;
@@ -381,7 +381,7 @@ header .step-subcontainer .step-info {
   display: flex;
   justify-content: space-between;
 }
-.main-subcontainer fieldset .btn-container .btn-back {
+.main-subcontainer fieldset .btn-container .btn-back, .form-step-final fieldset .btn-container .btn-back {
   border: none;
   border-radius: 0.5rem;
   padding: 0.875rem 1rem;
@@ -391,7 +391,7 @@ header .step-subcontainer .step-info {
   color: hsl(225deg, 11%, 49%);
   display: none;
 }
-.main-subcontainer fieldset .btn-container .btn-next {
+.main-subcontainer fieldset .btn-container .btn-next, .form-step-final fieldset .btn-container .btn-next {
   border: none;
   border-radius: 0.5rem;
   padding: 0.875rem 1rem;
@@ -401,7 +401,7 @@ header .step-subcontainer .step-info {
   color: hsl(217deg, 100%, 97%);
   margin-left: auto;
 }
-.main-subcontainer fieldset .btn-container .btn-submit {
+.main-subcontainer fieldset .btn-container .btn-submit, .form-step-final fieldset .btn-container .btn-submit {
   border: none;
   border-radius: 0.5rem;
   padding: 0.875rem 1rem;
@@ -410,6 +410,23 @@ header .step-subcontainer .step-info {
   background: hsl(243deg, 100%, 62%);
   color: hsl(217deg, 100%, 97%);
   display: none;
+}
+
+.form-step-final {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 3.75rem 1.25rem;
+}
+.form-step-final img {
+  width: 4rem;
+}
+.form-step-final h2 {
+  color: hsl(213deg, 96%, 18%);
+}
+.form-step-final p {
+  color: hsl(225deg, 11%, 49%);
 }
 
 @media screen and (min-width: 768px) {
@@ -425,102 +442,102 @@ header .step-subcontainer .step-info {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 0.5rem;
   }
-  .main-subcontainer {
+  .main-subcontainer, .form-step-final {
     margin: unset;
     box-shadow: unset;
     padding: 1.625rem calc(5vw - 1rem) 0 5vw;
   }
-  .main-subcontainer .text-container {
+  .main-subcontainer .text-container, .form-step-final .text-container {
     margin-bottom: 3rem;
   }
-  .main-subcontainer .text-container h1 {
+  .main-subcontainer .text-container h1, .form-step-final .text-container h1 {
     font-size: 1.875rem;
   }
-  .main-subcontainer fieldset .form-step-1 {
+  .main-subcontainer fieldset .form-step-1, .form-step-final fieldset .form-step-1 {
     font-size: 0.875rem;
   }
-  .main-subcontainer fieldset .form-step-1 #name-input, .main-subcontainer fieldset .form-step-1 #email-input, .main-subcontainer fieldset .form-step-1 #tel-input {
+  .main-subcontainer fieldset .form-step-1 #name-input, .form-step-final fieldset .form-step-1 #name-input, .main-subcontainer fieldset .form-step-1 #email-input, .form-step-final fieldset .form-step-1 #email-input, .main-subcontainer fieldset .form-step-1 #tel-input, .form-step-final fieldset .form-step-1 #tel-input {
     border-radius: 0.5rem;
     padding: 0.75rem;
     font-size: inherit;
   }
-  .main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child) {
+  .main-subcontainer fieldset .form-step-1 #name-input:not(:last-child), .form-step-final fieldset .form-step-1 #name-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #email-input:not(:last-child), .form-step-final fieldset .form-step-1 #email-input:not(:last-child), .main-subcontainer fieldset .form-step-1 #tel-input:not(:last-child), .form-step-final fieldset .form-step-1 #tel-input:not(:last-child) {
     margin-bottom: 1.5rem;
   }
-  .main-subcontainer fieldset .form-step-2 .fs2-inner {
+  .main-subcontainer fieldset .form-step-2 .fs2-inner, .form-step-final fieldset .form-step-2 .fs2-inner {
     grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
-  .main-subcontainer fieldset .form-step-2 .fs2-inner label {
+  .main-subcontainer fieldset .form-step-2 .fs2-inner label, .form-step-final fieldset .form-step-2 .fs2-inner label {
     flex-direction: column;
     gap: 2rem;
     cursor: pointer;
   }
-  .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper {
+  .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper {
     margin: 2rem 0 0 0;
     padding-right: 1.5rem;
     gap: 1.5rem;
   }
-  .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper label:focus-within .slider, .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper label:hover .slider {
+  .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper label:focus-within .slider, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper label:focus-within .slider, .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper label:hover .slider, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper label:hover .slider {
     outline: 1px solid hsl(213deg, 96%, 18%);
     outline-offset: 4px;
   }
-  .main-subcontainer fieldset .form-step-3 {
+  .main-subcontainer fieldset .form-step-3, .form-step-final fieldset .form-step-3 {
     gap: 1rem;
   }
-  .main-subcontainer fieldset .form-step-3 label:hover {
+  .main-subcontainer fieldset .form-step-3 label:hover, .form-step-final fieldset .form-step-3 label:hover {
     border: 1px solid hsl(243deg, 100%, 62%) !important;
   }
-  .main-subcontainer fieldset .form-step-3 label:focus-within {
+  .main-subcontainer fieldset .form-step-3 label:focus-within, .form-step-final fieldset .form-step-3 label:focus-within {
     outline: 1px solid hsl(243deg, 100%, 62%);
     outline-offset: 4px;
   }
-  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch:focus-within {
+  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch:focus-within, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container .switch:focus-within {
     outline: 1px solid hsl(243deg, 100%, 62%);
     outline-offset: 4px;
     border-radius: 0.375rem;
   }
-  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch:focus-within span {
+  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch:focus-within span, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container .switch:focus-within span {
     color: hsl(243deg, 100%, 62%);
   }
-  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span {
+  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span {
     transition: 0.1s;
   }
-  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span:hover {
+  .main-subcontainer fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span:hover, .form-step-final fieldset .form-step-4 .plan-addons-container .plan-price-container .switch span:hover {
     color: hsl(243deg, 100%, 62%);
     cursor: pointer;
     transition: 0.1s;
   }
-  .main-subcontainer fieldset .btn-container {
+  .main-subcontainer fieldset .btn-container, .form-step-final fieldset .btn-container {
     position: unset;
     padding: 0;
     margin-top: 5rem;
   }
-  .main-subcontainer fieldset .btn-container button {
+  .main-subcontainer fieldset .btn-container button, .form-step-final fieldset .btn-container button {
     cursor: pointer;
   }
-  .main-subcontainer fieldset .btn-container button:focus-visible {
+  .main-subcontainer fieldset .btn-container button:focus-visible, .form-step-final fieldset .btn-container button:focus-visible {
     outline-offset: 3px;
   }
-  .main-subcontainer fieldset .btn-container .btn-back {
+  .main-subcontainer fieldset .btn-container .btn-back, .form-step-final fieldset .btn-container .btn-back {
     transition: color 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-back:hover, .main-subcontainer fieldset .btn-container .btn-back:focus-visible {
+  .main-subcontainer fieldset .btn-container .btn-back:hover, .form-step-final fieldset .btn-container .btn-back:hover, .main-subcontainer fieldset .btn-container .btn-back:focus-visible, .form-step-final fieldset .btn-container .btn-back:focus-visible {
     color: hsl(213deg, 96%, 18%);
     transition: color 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-next {
+  .main-subcontainer fieldset .btn-container .btn-next, .form-step-final fieldset .btn-container .btn-next {
     transition: background 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-next:hover, .main-subcontainer fieldset .btn-container .btn-next:focus-visible {
+  .main-subcontainer fieldset .btn-container .btn-next:hover, .form-step-final fieldset .btn-container .btn-next:hover, .main-subcontainer fieldset .btn-container .btn-next:focus-visible, .form-step-final fieldset .btn-container .btn-next:focus-visible {
     background: #033e86;
     transition: background 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-submit {
+  .main-subcontainer fieldset .btn-container .btn-submit, .form-step-final fieldset .btn-container .btn-submit {
     transition: background 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-submit:hover, .main-subcontainer fieldset .btn-container .btn-submit:focus-visible {
+  .main-subcontainer fieldset .btn-container .btn-submit:hover, .form-step-final fieldset .btn-container .btn-submit:hover, .main-subcontainer fieldset .btn-container .btn-submit:focus-visible, .form-step-final fieldset .btn-container .btn-submit:focus-visible {
     background: background #7770ff;
     transition: 0.1s;
   }
