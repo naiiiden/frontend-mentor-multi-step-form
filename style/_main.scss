@@ -396,6 +396,7 @@
 
     img {
         width: 4rem;
+        margin-bottom: 1rem;
     }
 
     h2 {
@@ -404,6 +405,7 @@
 
     p {
         color: $cool-gray;
+        max-width: 440px;
     }
 }
 
@@ -559,6 +561,20 @@
                     }
                 }
             }
+        }
+    }
+
+    .form-step-final {
+        @extend .main-subcontainer;
+        padding: clamp(7.5vw, 12.5vw, 9rem) calc(5vw - 1rem) clamp(7.5vw, 12.5vw, 9rem) 5vw;
+        gap: 1rem;
+
+        img {
+            width: 5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
         }
     }
 }

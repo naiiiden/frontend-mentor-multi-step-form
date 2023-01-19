@@ -421,12 +421,14 @@ header .step-subcontainer .step-info {
 }
 .form-step-final img {
   width: 4rem;
+  margin-bottom: 1rem;
 }
 .form-step-final h2 {
   color: hsl(213deg, 96%, 18%);
 }
 .form-step-final p {
   color: hsl(225deg, 11%, 49%);
+  max-width: 440px;
 }
 
 @media screen and (min-width: 768px) {
@@ -540,6 +542,16 @@ header .step-subcontainer .step-info {
   .main-subcontainer fieldset .btn-container .btn-submit:hover, .form-step-final fieldset .btn-container .btn-submit:hover, .main-subcontainer fieldset .btn-container .btn-submit:focus-visible, .form-step-final fieldset .btn-container .btn-submit:focus-visible {
     background: background #7770ff;
     transition: 0.1s;
+  }
+  .form-step-final {
+    padding: clamp(7.5vw, 12.5vw, 9rem) calc(5vw - 1rem) clamp(7.5vw, 12.5vw, 9rem) 5vw;
+    gap: 1rem;
+  }
+  .form-step-final img {
+    width: 5rem;
+  }
+  .form-step-final h2 {
+    font-size: 2rem;
   }
 }
 body {
