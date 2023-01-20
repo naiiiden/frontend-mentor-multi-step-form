@@ -33,6 +33,7 @@ document.querySelector(".btn-next").addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != steps.length ? plusStep(1) : "";
     stepIndex == steps.length ? document.querySelector("form").style.display = "none" : "";
+    document.querySelector(".step input").focus();
 });
 
 // form step 2 input container style when focused

@@ -359,7 +359,6 @@
                 @include btn;
                 background: none;
                 color: $cool-gray;
-                // display: none;
             }
 
             .btn-next {
@@ -367,8 +366,9 @@
                 background: $marine-blue;
                 color: $magnolia;
                 margin-left: auto;
+                order: 1;
             }
-
+            
             .btn-submit {
                 @include btn;
                 background: $purplish-blue;

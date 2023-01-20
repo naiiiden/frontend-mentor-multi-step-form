@@ -390,6 +390,7 @@ header .step-subcontainer .step-info {
   background: hsl(213deg, 96%, 18%);
   color: hsl(217deg, 100%, 97%);
   margin-left: auto;
+  order: 1;
 }
 .main-subcontainer fieldset .btn-container .btn-submit, .form-step-final fieldset .btn-container .btn-submit {
   border: none;
