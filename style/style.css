@@ -473,6 +473,10 @@ header .step-subcontainer .step-info {
     gap: 2rem;
     cursor: pointer;
   }
+  .main-subcontainer fieldset .form-step-2 .fs2-inner label:focus-within, .form-step-final fieldset .form-step-2 .fs2-inner label:focus-within {
+    outline: 1px solid hsl(243deg, 100%, 62%);
+    outline-offset: 4px;
+  }
   .main-subcontainer fieldset .form-step-2 .monthly-yearly-wrapper, .form-step-final fieldset .form-step-2 .monthly-yearly-wrapper {
     margin: 2rem 0 0 0;
     padding-right: 1.5rem;
