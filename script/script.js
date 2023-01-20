@@ -27,13 +27,16 @@ function showSteps(n) {
 document.querySelector(".btn-back").addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != 1 ? plusStep(-1) : "";
+    stepIndex == steps.length - 1 ? (document.querySelector(".btn-next").style.display = "none", document.querySelector(".btn-submit").style.display = "block") : document.querySelector(".btn-submit").style.display = "none" ;
+    stepIndex != steps.length -1 ? document.querySelector(".btn-next").style.display = "block" : document.querySelector(".btn-next").style.display = "none";
 });
 
 document.querySelector(".btn-next").addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != steps.length ? plusStep(1) : "";
+    stepIndex == steps.length - 1 ? (document.querySelector(".btn-next").style.display = "none", document.querySelector(".btn-submit").style.display = "block") : document.querySelector(".btn-submit").style.display = "none" ;
+    stepIndex != steps.length -1 ? document.querySelector(".btn-next").style.display = "block" : document.querySelector(".btn-next").style.display = "none";
     stepIndex == steps.length ? document.querySelector("form").style.display = "none" : "";
-    document.querySelector(".step input").focus();
 });
 
 // form step 2 input container style when focused
