@@ -22,6 +22,14 @@ function showSteps(n) {
         }
         circles[stepIndex-1].className += " active";
     }
+
+    const h1 = document.querySelector("h1");
+    const p = document.querySelector("legend p");
+
+    stepIndex == 1 ? (h1.textContent = "Personal info", p.textContent = "Please provide your name, email address, and phone number.") : "";
+    stepIndex == 2 ? (h1.textContent = "Select your plan", p.textContent = "You have the option of monthly or yearly billing") : ""; 
+    stepIndex == 3 ? (h1.textContent = "Pick add-ons", p.textContent = "Add-ons help enhance your gaming experience") : "";
+    stepIndex == 4 ? (h1.textContent = "Finishing up", p.textContent = "Double-check everything looks OK before confirming") : "";
 }
 
 document.querySelector(".btn-back").addEventListener("click", (e) => {
