@@ -1,4 +1,5 @@
 let steps = document.getElementsByClassName("step");
+let circles = document.getElementsByClassName("step-circle"); 
 let stepIndex = 1;
 showSteps(stepIndex);
 
@@ -15,7 +16,12 @@ function showSteps(n) {
       steps[i].style.display = "none";  
     }
     steps[stepIndex-1].style.display = "grid"; 
-    console.log(stepIndex); 
+    if (stepIndex != steps.length) {
+        for (i = 0; i < circles.length; i++) {
+        circles[i].className = circles[i].className.replace(" active", "");
+        }
+        circles[stepIndex-1].className += " active";
+    }
 }
 
 document.querySelector(".btn-back").addEventListener("click", (e) => {
