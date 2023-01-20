@@ -507,10 +507,10 @@ header .step-subcontainer .step-info {
     padding: 0;
     margin-top: 5rem;
   }
-  .main-subcontainer fieldset .btn-container button, .form-step-final fieldset .btn-container button {
+  .main-subcontainer fieldset .btn-container button, .form-step-final fieldset .btn-container button, .main-subcontainer fieldset .btn-container input, .form-step-final fieldset .btn-container input {
     cursor: pointer;
   }
-  .main-subcontainer fieldset .btn-container button:focus-visible, .form-step-final fieldset .btn-container button:focus-visible {
+  .main-subcontainer fieldset .btn-container button:focus-visible, .form-step-final fieldset .btn-container button:focus-visible, .main-subcontainer fieldset .btn-container input:focus-visible, .form-step-final fieldset .btn-container input:focus-visible {
     outline-offset: 3px;
   }
   .main-subcontainer fieldset .btn-container .btn-back, .form-step-final fieldset .btn-container .btn-back {
@@ -520,18 +520,15 @@ header .step-subcontainer .step-info {
     color: hsl(213deg, 96%, 18%);
     transition: color 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-next, .form-step-final fieldset .btn-container .btn-next {
+  .main-subcontainer fieldset .btn-container .btn-next, .form-step-final fieldset .btn-container .btn-next, .main-subcontainer fieldset .btn-container .btn-submit, .form-step-final fieldset .btn-container .btn-submit {
     transition: background 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-next:hover, .form-step-final fieldset .btn-container .btn-next:hover, .main-subcontainer fieldset .btn-container .btn-next:focus-visible, .form-step-final fieldset .btn-container .btn-next:focus-visible {
+  .main-subcontainer fieldset .btn-container .btn-next:hover, .form-step-final fieldset .btn-container .btn-next:hover, .main-subcontainer fieldset .btn-container .btn-next:focus-visible, .form-step-final fieldset .btn-container .btn-next:focus-visible, .main-subcontainer fieldset .btn-container .btn-submit:hover, .form-step-final fieldset .btn-container .btn-submit:hover, .main-subcontainer fieldset .btn-container .btn-submit:focus-visible, .form-step-final fieldset .btn-container .btn-submit:focus-visible {
     background: #033e86;
-    transition: background 0.1s;
+    transition: 0.1s;
   }
-  .main-subcontainer fieldset .btn-container .btn-submit, .form-step-final fieldset .btn-container .btn-submit {
-    transition: background 0.1s;
-  }
-  .main-subcontainer fieldset .btn-container .btn-submit:hover, .form-step-final fieldset .btn-container .btn-submit:hover, .main-subcontainer fieldset .btn-container .btn-submit:focus-visible, .form-step-final fieldset .btn-container .btn-submit:focus-visible {
-    background: background #7770ff;
+  .main-subcontainer fieldset .btn-container .btn-next.btn-submit:hover, .main-subcontainer fieldset .btn-container .btn-next.btn-submit:focus-visible, .main-subcontainer fieldset .btn-container .btn-submit.btn-submit:hover, .form-step-final fieldset .btn-container .btn-submit.btn-submit:hover, .main-subcontainer fieldset .btn-container .btn-submit.btn-submit:focus-visible, .form-step-final fieldset .btn-container .btn-submit.btn-submit:focus-visible {
+    background: #716aff;
     transition: 0.1s;
   }
   .form-step-final {

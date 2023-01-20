@@ -519,11 +519,11 @@
                 padding: 0;
                 margin-top: 5rem;
 
-                button {
+                button, input {
                     cursor: pointer;
                 }
 
-                button:focus-visible {
+                button:focus-visible, input:focus-visible {
                     outline-offset: 3px;
                 }
 
@@ -536,21 +536,19 @@
                     }
                 }
 
-                .btn-next {
+                .btn-next, .btn-submit {
                     transition: background .1s;
 
                     &:hover, &:focus-visible {
                         background: lighten($color: $marine-blue, $amount: 8.75%);
-                        transition: background .1s;
-                    }
-                }
-
-                .btn-submit {
-                    transition: background .1s;
-
-                    &:hover, &:focus-visible {
-                        background: background lighten($color: $purplish-blue, $amount: 10%);
                         transition: .1s;
+                    }
+
+                    &.btn-submit {
+                        &:hover, &:focus-visible {
+                            background: lighten($color: $purplish-blue, $amount: 8.75%);
+                            transition: .1s;
+                        }
                     }
                 }
             }
