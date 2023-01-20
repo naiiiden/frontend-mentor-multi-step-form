@@ -36,8 +36,13 @@ document.querySelector(".btn-next").addEventListener("click", (e) => {
     stepIndex != steps.length ? plusStep(1) : "";
     stepIndex == steps.length - 1 ? (document.querySelector(".btn-next").style.display = "none", document.querySelector(".btn-submit").style.display = "block") : document.querySelector(".btn-submit").style.display = "none" ;
     stepIndex != steps.length -1 ? document.querySelector(".btn-next").style.display = "block" : document.querySelector(".btn-next").style.display = "none";
-    stepIndex == steps.length ? document.querySelector("form").style.display = "none" : "";
 });
+
+document.querySelector(".btn-submit").addEventListener("click", (e) => {
+    e.preventDefault();
+    stepIndex != steps.length ? plusStep(1) : "";
+    stepIndex == steps.length ? document.querySelector("form").style.display = "none" : "";
+})
 
 // form step 2 input container style when focused
 let step2Inputs = document.querySelectorAll(".form-step-2 input[type='radio']");
