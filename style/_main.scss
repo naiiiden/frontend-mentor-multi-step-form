@@ -398,7 +398,7 @@
 
     p {
         color: $cool-gray;
-        max-width: 440px;
+        max-width: 420px;
     }
 }
 
@@ -429,8 +429,13 @@
                 font-size: 1.875rem;
             }
         }
-
+        
         fieldset {
+            width: 26.25rem;
+            display: flex;
+            flex-direction: column;
+            height: 33.5rem;
+
             .form-step-1 {
                 font-size: .875rem;
         
@@ -517,7 +522,7 @@
             .btn-container {
                 position: unset;
                 padding: 0;
-                margin-top: 5rem;
+                margin-top: auto;
 
                 button, input {
                     cursor: pointer;

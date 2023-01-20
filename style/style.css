@@ -419,7 +419,7 @@ header .step-subcontainer .step-info {
 }
 .form-step-final p {
   color: hsl(225deg, 11%, 49%);
-  max-width: 440px;
+  max-width: 420px;
 }
 
 @media screen and (min-width: 768px) {
@@ -445,6 +445,12 @@ header .step-subcontainer .step-info {
   }
   .main-subcontainer .text-container h1, .form-step-final .text-container h1 {
     font-size: 1.875rem;
+  }
+  .main-subcontainer fieldset, .form-step-final fieldset {
+    width: 26.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 33.5rem;
   }
   .main-subcontainer fieldset .form-step-1, .form-step-final fieldset .form-step-1 {
     font-size: 0.875rem;
@@ -505,7 +511,7 @@ header .step-subcontainer .step-info {
   .main-subcontainer fieldset .btn-container, .form-step-final fieldset .btn-container {
     position: unset;
     padding: 0;
-    margin-top: 5rem;
+    margin-top: auto;
   }
   .main-subcontainer fieldset .btn-container button, .form-step-final fieldset .btn-container button, .main-subcontainer fieldset .btn-container input, .form-step-final fieldset .btn-container input {
     cursor: pointer;
