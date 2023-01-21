@@ -60,10 +60,13 @@ btn_next.addEventListener("click", (e) => {
 // form validation
 const validateStep1 = () => {
     const name_input = document.querySelector("#name-input");
-    const name_error = document.querySelector(".name_error");
+    const name_error = document.querySelector(".name-error");
+    const email_input = document.querySelector("#email-input");
+    const email_error = document.querySelector(".email-error");
 
+    // name input
     if (name_input.value == "") {
-        name_error.textContent = "This field is required"
+        name_error.textContent = "This field is required";
         name_input.classList.add("error-input"); 
     } else if (name_input.value.match(/\d/)) {
         name_error.textContent = "Name cannot contain numbers" 
@@ -74,6 +77,17 @@ const validateStep1 = () => {
     } else {
         name_error.textContent = "";
         name_input.classList.remove("error-input"); 
+    }
+
+    if (email_input.value == "") {
+        email_error.textContent = "This field is required";
+        email_input.classList.add("error-input"); 
+    } else if (!/^\S+@\S+\.\S+$/.test(email_input.value)) {
+        email_error.textContent = "Please provide a valid email address";
+        email_input.classList.add("error-input"); 
+    } else if (/^\S+@\S+\.\S+$/.test(email_input.value)) {
+        email_error.textContent = "";
+        email_input.classList.remove("error-input"); 
     }
 
     name_input.value != "" 
