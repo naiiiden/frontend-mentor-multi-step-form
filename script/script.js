@@ -63,6 +63,8 @@ const validateStep1 = () => {
     const name_error = document.querySelector(".name-error");
     const email_input = document.querySelector("#email-input");
     const email_error = document.querySelector(".email-error");
+    const tel_input = document.querySelector("#tel-input");
+    const tel_error = document.querySelector(".tel-error");
 
     // name input
     if (name_input.value == "") {
@@ -88,6 +90,17 @@ const validateStep1 = () => {
     } else if (/^\S+@\S+\.\S+$/.test(email_input.value)) {
         email_error.textContent = "";
         email_input.classList.remove("error-input"); 
+    }
+
+    if (tel_input.value == "") {
+        tel_error.textContent = "This field is required";
+        tel_input.classList.add("error-input"); 
+    } else if (!/^\+?[1-9][0-9]{7,14}$/.test(tel_input.value)) {
+        tel_error.textContent = "Please provide a valid phone number";
+        tel_input.classList.add("error-input"); 
+    } else if (/^\+?[1-9][0-9]{7,14}$/.test(tel_input.value)) {
+        tel_error.textContent = "";
+        tel_input.classList.remove("error-input"); 
     }
 
     name_input.value != "" 
