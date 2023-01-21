@@ -4,6 +4,7 @@ const btn_back = document.querySelector(".btn-back");
 const btn_next = document.querySelector(".btn-next");
 const btn_submit = document.querySelector(".btn-submit");
 let stepIndex = 1;
+
 showSteps(stepIndex);
 
 function plusStep(n) {
@@ -39,8 +40,6 @@ btn_back.addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != 1 ? plusStep(-1) : "";
     stepIndex == steps.length - 1 ? (btn_next.style.display = "none", btn_submit.style.display = "block") : btn_submit.style.display = "none" ;
-    stepIndex != steps.length -1 ? btn_next.style.display = "block" : btn_next.style.display = "none";
-    console.log(stepIndex);
 });
 
 btn_next.addEventListener("click", (e) => {
@@ -54,12 +53,11 @@ btn_next.addEventListener("click", (e) => {
     }
     
     stepIndex == steps.length - 1 
-    ? (btn_next.style.display = "none",
-        btn_submit.style.display = "block")
-    : (btn_submit.style.display = "none",
-        btn_next.style.display = "block")
+    ? (btn_next.style.display = "none", btn_submit.style.display = "block")
+    : (btn_submit.style.display = "none", btn_next.style.display = "block");
 });
 
+// form validation
 const validateStep1 = () => {
     document.querySelector("#name-input").value != "" 
     && document.querySelector("#email-input").value != "" 
