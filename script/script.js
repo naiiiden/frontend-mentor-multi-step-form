@@ -1,5 +1,8 @@
-let steps = document.getElementsByClassName("step");
-let circles = document.getElementsByClassName("step-circle"); 
+const steps = document.getElementsByClassName("step");
+const circles = document.getElementsByClassName("step-circle"); 
+const btn_back = document.querySelector(".btn-back"); 
+const btn_next = document.querySelector(".btn-next");
+const btn_submit = document.querySelector(".btn-submit");
 let stepIndex = 1;
 showSteps(stepIndex);
 
@@ -26,27 +29,59 @@ function showSteps(n) {
     const h1 = document.querySelector("h1");
     const p = document.querySelector("legend p");
 
-    stepIndex == 1 ? (h1.textContent = "Personal info", p.textContent = "Please provide your name, email address, and phone number.", document.querySelector(".btn-back").style.display = "none") : document.querySelector(".btn-back").style.display = "unset";
+    stepIndex == 1 ? (h1.textContent = "Personal info", p.textContent = "Please provide your name, email address, and phone number.", btn_back.style.display = "none") : btn_back.style.display = "unset";
     stepIndex == 2 ? (h1.textContent = "Select your plan", p.textContent = "You have the option of monthly or yearly billing") : ""; 
     stepIndex == 3 ? (h1.textContent = "Pick add-ons", p.textContent = "Add-ons help enhance your gaming experience") : "";
     stepIndex == 4 ? (h1.textContent = "Finishing up", p.textContent = "Double-check everything looks OK before confirming") : "";
 }
 
-document.querySelector(".btn-back").addEventListener("click", (e) => {
+btn_back.addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != 1 ? plusStep(-1) : "";
-    stepIndex == steps.length - 1 ? (document.querySelector(".btn-next").style.display = "none", document.querySelector(".btn-submit").style.display = "block") : document.querySelector(".btn-submit").style.display = "none" ;
-    stepIndex != steps.length -1 ? document.querySelector(".btn-next").style.display = "block" : document.querySelector(".btn-next").style.display = "none";
+    stepIndex == steps.length - 1 ? (btn_next.style.display = "none", btn_submit.style.display = "block") : btn_submit.style.display = "none" ;
+    stepIndex != steps.length -1 ? btn_next.style.display = "block" : btn_next.style.display = "none";
+    console.log(stepIndex);
 });
 
-document.querySelector(".btn-next").addEventListener("click", (e) => {
+btn_next.addEventListener("click", (e) => {
     e.preventDefault();
-    stepIndex != steps.length ? plusStep(1) : "";
-    stepIndex == steps.length - 1 ? (document.querySelector(".btn-next").style.display = "none", document.querySelector(".btn-submit").style.display = "block") : document.querySelector(".btn-submit").style.display = "none" ;
-    stepIndex != steps.length -1 ? document.querySelector(".btn-next").style.display = "block" : document.querySelector(".btn-next").style.display = "none";
+    if (stepIndex == 1) {
+        validateStep1();
+    } else if (stepIndex == 2) {
+        validateStep2();
+    } else if (stepIndex == 3) {
+        validateStep3();
+    }
+    
+    stepIndex == steps.length - 1 
+    ? (btn_next.style.display = "none",
+        btn_submit.style.display = "block")
+    : (btn_submit.style.display = "none",
+        btn_next.style.display = "block")
 });
 
-document.querySelector(".btn-submit").addEventListener("click", (e) => {
+const validateStep1 = () => {
+    document.querySelector("#name-input").value != "" 
+    && document.querySelector("#email-input").value != "" 
+    && document.querySelector("#tel-input").value != "" 
+    ? plusStep(1) : "";
+}
+
+const validateStep2 = () => {
+    document.querySelector("#arcade").checked 
+    || document.querySelector("#advanced").checked 
+    || document.querySelector("#pro").checked 
+    ? plusStep(1) : "";
+}
+
+const validateStep3 = () => {
+    document.querySelector("#online").checked 
+    || document.querySelector("#storage").checked 
+    || document.querySelector("#customizable").checked
+    ? plusStep(1) : "";
+}
+
+btn_submit.addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != steps.length ? plusStep(1) : "";
     stepIndex == steps.length ? document.querySelector("form").style.display = "none" : "";
