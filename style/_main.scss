@@ -25,8 +25,8 @@
             font-size: .75rem;
     
             .label-error-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                display: flex;
+                justify-content: space-between;
                 margin-bottom: 0.125rem;
                 color: $marine-blue;
     
@@ -34,6 +34,7 @@
                     justify-self: end;
                     color: $strawberry-red;
                     font-weight: 500;
+                    text-align: end;
                 }
             }
     
@@ -45,19 +46,25 @@
                 color: $marine-blue;
                 font-weight: 500;
 
+                
                 &#name-input:focus, &#email-input:focus, &#tel-input:focus,
                 &#name-input:active, &#email-input:active, &#tel-input:active {
                     outline: 1px solid $purplish-blue;
                     border: 1px solid $purplish-blue;
                 }
-    
+                
                 &::placeholder {
                     font-weight: 500;
                     color: $cool-gray;
                 }
-    
+                
                 &:not(:last-child) {
                     margin-bottom: 1rem;
+                }
+
+                &.error-input, &.error-input:focus, &.error-input:active {
+                    outline: 1px solid $strawberry-red !important;
+                    border: 1px solid $strawberry-red !important;
                 }
             }
         }

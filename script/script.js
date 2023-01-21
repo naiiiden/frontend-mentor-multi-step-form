@@ -59,7 +59,23 @@ btn_next.addEventListener("click", (e) => {
 
 // form validation
 const validateStep1 = () => {
-    document.querySelector("#name-input").value != "" 
+    const name_input = document.querySelector("#name-input");
+
+    if (name_input.value == "") {
+        document.querySelector(".name-error").textContent = "This field is required"
+        name_input.classList.add("error-input"); 
+    } else if (name_input.value.match(/\d/)) {
+        document.querySelector(".name-error").textContent = "Name cannot contain numbers" 
+        name_input.classList.add("error-input"); 
+    } else if (/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(name_input.value)) {
+        document.querySelector(".name-error").textContent = "Name cannot contain special characters";
+        name_input.classList.add("error-input"); 
+    } else {
+        document.querySelector(".name-error").textContent = "";
+        name_input.classList.remove("error-input"); 
+    }
+
+    name_input.value != "" 
     && document.querySelector("#email-input").value != "" 
     && document.querySelector("#tel-input").value != "" 
     ? plusStep(1) : "";
