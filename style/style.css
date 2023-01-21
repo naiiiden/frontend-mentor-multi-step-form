@@ -401,6 +401,7 @@ header .step-subcontainer .step-info {
   background: hsl(243deg, 100%, 62%);
   color: hsl(217deg, 100%, 97%);
   display: none;
+  order: 1;
 }
 
 .form-step-final {

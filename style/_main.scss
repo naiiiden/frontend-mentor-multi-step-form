@@ -373,7 +373,8 @@
                 @include btn;
                 background: $purplish-blue;
                 color: $magnolia;
-                display: none;                
+                display: none;    
+                order: 1;            
             }
         }
     }
