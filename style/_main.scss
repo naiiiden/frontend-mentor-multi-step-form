@@ -35,6 +35,10 @@
                     color: $strawberry-red;
                     font-weight: 500;
                     text-align: end;
+
+                    &.error:empty {
+                        display: none;
+                    }
                 }
             }
     

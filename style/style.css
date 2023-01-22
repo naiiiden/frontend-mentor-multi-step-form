@@ -110,6 +110,9 @@ header .step-subcontainer .step-info {
   font-weight: 500;
   text-align: end;
 }
+.main-subcontainer fieldset .form-step-1 .label-error-container .error.error:empty, .form-step-final fieldset .form-step-1 .label-error-container .error.error:empty {
+  display: none;
+}
 .main-subcontainer fieldset .form-step-1 #name-input, .form-step-final fieldset .form-step-1 #name-input, .main-subcontainer fieldset .form-step-1 #email-input, .form-step-final fieldset .form-step-1 #email-input, .main-subcontainer fieldset .form-step-1 #tel-input, .form-step-final fieldset .form-step-1 #tel-input {
   width: 100%;
   padding: 0.625rem;
