@@ -51,11 +51,19 @@ btn_next.addEventListener("click", (e) => {
     } else if (stepIndex == 3) {
         validateStep3();
     }
+
+    stepIndex == 2 ? first2ndFocus() : "";
     
     stepIndex == steps.length - 1 
     ? (btn_next.style.display = "none", btn_submit.style.display = "block")
     : (btn_submit.style.display = "none", btn_next.style.display = "block");
 });
+
+let first2ndStep = true;
+
+function first2ndFocus() {
+    first2ndStep == true ? (document.querySelector("#arcade").focus(), first2ndStep = false) : "";
+}
 
 // form validation
 const validateStep1 = () => {
