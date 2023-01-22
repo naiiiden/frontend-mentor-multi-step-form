@@ -66,6 +66,8 @@ const validateStep1 = () => {
     const tel_input = document.querySelector("#tel-input");
     const tel_error = document.querySelector(".tel-error");
 
+    let nameValid, emailValid, telValid = false;
+
     // name input
     if (name_input.value == "") {
         name_error.textContent = "This field is required";
@@ -79,6 +81,7 @@ const validateStep1 = () => {
     } else {
         name_error.textContent = "";
         name_input.classList.remove("error-input"); 
+        nameValid = true;
     }
 
     if (email_input.value == "") {
@@ -90,6 +93,7 @@ const validateStep1 = () => {
     } else if (/^\S+@\S+\.\S+$/.test(email_input.value)) {
         email_error.textContent = "";
         email_input.classList.remove("error-input"); 
+        emailValid = true;
     }
 
     if (tel_input.value == "") {
@@ -101,11 +105,12 @@ const validateStep1 = () => {
     } else if (/^\+?[1-9][0-9]{7,14}$/.test(tel_input.value)) {
         tel_error.textContent = "";
         tel_input.classList.remove("error-input"); 
+        telValid = true;
     }
 
-    name_input.value != "" 
-    && document.querySelector("#email-input").value != "" 
-    && document.querySelector("#tel-input").value != "" 
+    nameValid == true
+    && emailValid == true 
+    && telValid == true 
     ? plusStep(1) : "";
 }
 
