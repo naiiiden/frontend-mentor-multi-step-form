@@ -53,6 +53,7 @@ btn_next.addEventListener("click", (e) => {
     }
 
     stepIndex == 2 ? first2ndFocus() : "";
+    stepIndex == 3 ? first3rdFocus() : "";
     
     stepIndex == steps.length - 1 
     ? (btn_next.style.display = "none", btn_submit.style.display = "block")
@@ -63,6 +64,12 @@ let first2ndStep = true;
 
 function first2ndFocus() {
     first2ndStep == true ? (document.querySelector("#arcade").focus(), first2ndStep = false) : "";
+}
+
+let first3rdStep = true;
+
+function first3rdFocus() {
+    first3rdStep == true ? (document.querySelector("#online").focus(), first3rdStep = false) : "";
 }
 
 // form validation
