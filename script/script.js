@@ -39,7 +39,8 @@ function showSteps(n) {
 btn_back.addEventListener("click", (e) => {
     e.preventDefault();
     stepIndex != 1 ? plusStep(-1) : "";
-    stepIndex == steps.length - 1 ? (btn_next.style.display = "none", btn_submit.style.display = "block") : btn_submit.style.display = "none" ;
+    stepIndex == steps.length - 1 ? (btn_next.style.display = "none", btn_submit.style.display = "block") : btn_submit.style.display = "none";
+    stepIndex != steps.length - 1 ? btn_next.style.display = "block" : btn_next.style.display = "none";
 });
 
 btn_next.addEventListener("click", (e) => {
