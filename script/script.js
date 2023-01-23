@@ -148,7 +148,12 @@ let step2Inputs = document.querySelectorAll(".form-step-2 input[type='radio']");
 for (let i = 0; i < step2Inputs.length; i++) {
     step2Inputs[i].addEventListener("change", () => {
         for (let i = 0; i < step2Inputs.length; i++) {
-            step2Inputs[i].checked ? document.querySelector(".plan-name").textContent = step2Inputs[i].parentNode.querySelector(".plan-title").textContent : "";
+            step2Inputs[i].checked 
+            ? (
+                document.querySelector(".plan-name").textContent = step2Inputs[i].parentNode.querySelector(".plan-title").textContent, 
+                document.querySelector(".plan-main-price").textContent = step2Inputs[i].parentNode.querySelector(".price").textContent
+            ) : "";
+            // step2Inputs[i].checked ? document.querySelector(".plan-main-price").textContent = step2Inputs[i].parentNode.querySelector(".price").textContent : "";
             step2Inputs[i].parentNode.style.background = step2Inputs[i].checked ? "hsl(217, 100%, 97%)" : "#fff";
             step2Inputs[i].parentNode.style.border = step2Inputs[i].checked ? "1px solid hsl(243, 100%, 62%)" : "1px solid hsl(229, 24%, 87%)";
         };
