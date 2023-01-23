@@ -50,9 +50,9 @@ btn_next.addEventListener("click", (e) => {
     } else if (stepIndex == 2) {
         validateStep2();
     } else if (stepIndex == 3) {
-        validateStep3();
+        plusStep(1);
     }
-
+    
     stepIndex == 2 ? first2ndFocus() : "";
     stepIndex == 3 ? first3rdFocus() : "";
     
@@ -134,13 +134,6 @@ const validateStep2 = () => {
     document.querySelector("#arcade").checked 
     || document.querySelector("#advanced").checked 
     || document.querySelector("#pro").checked 
-    ? plusStep(1) : "";
-}
-
-const validateStep3 = () => {
-    document.querySelector("#online").checked 
-    || document.querySelector("#storage").checked 
-    || document.querySelector("#customizable").checked
     ? plusStep(1) : "";
 }
 
