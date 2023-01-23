@@ -51,6 +51,17 @@ btn_next.addEventListener("click", (e) => {
         validateStep2();
     } else if (stepIndex == 3) {
         plusStep(1);
+        // document.querySelectorAll(".form-step-3 label").forEach(label => {
+        //     if (label.querySelector("input").checked) {
+        //         document.querySelector(".plan-addons-container").innerHTML += 
+        //             `<div class="addon-price-container">
+        //                 <p>${label.querySelector(".addon").textContent}</p>
+        //                 <span class="fee">
+        //                     $<span class="price">${label.querySelector(".price").textContent}</span>/<span class="monthly-yearly">mo</span>
+        //                 </span>
+        //             </div>`
+        //     }    
+        // })   
     }
 
     stepIndex == 2 ? first2ndFocus() : "";
@@ -199,5 +210,40 @@ document.querySelectorAll(".form-step-3 input[type='checkbox']").forEach(input =
     input.addEventListener("change", () => {
         input.parentNode.style.background = input.checked == true ? "hsl(217, 100%, 97%)" : "#fff";
         input.parentNode.style.border = input.checked == true ? "1px solid hsl(243, 100%, 62%)" : "1px solid hsl(229, 24%, 87%)";
+    });
+});
+
+let dynamicDiv;
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const container = document.querySelector('.plan-addons-container');
+let checkedBoxes = [];
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', event => {
+        const label = event.target.parentNode;
+        if (event.target.checked) {
+            if (!checkedBoxes.includes(event.target.id)) {
+                checkedBoxes.push(event.target.id);
+                const addon = label.querySelector('.addon').textContent;
+                const price = label.querySelector('.price').textContent;
+                const div = document.createElement('div');
+                div.classList.add('addon-price-container');
+                div.innerHTML = 
+                    `<p>${addon}</p>
+                    <span class="fee">
+                        $<span class="price">${price}</span>/<span class="monthly-yearly">mo</span>
+                    </span>`;
+                container.appendChild(div);
+            }
+        } else {
+            if (checkedBoxes.includes(event.target.id)) {
+                const divs = container.querySelectorAll('.addon-price-container');
+                divs.forEach(div => {
+                    if (div.textContent.includes(event.target.parentNode.querySelector('.addon').textContent)) {
+                        container.removeChild(div);
+                        checkedBoxes = checkedBoxes.filter(id => id !== event.target.id)
+                    }
+                });
+            }
+        }
     });
 });
