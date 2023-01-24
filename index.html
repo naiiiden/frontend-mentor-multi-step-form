@@ -151,10 +151,10 @@
             <div class="plan-addons-container">
               <div class="plan-price-container">
                 <div class="plan-change-container">
-                  <p><span class="plan-name"></span> <span class="plan-type">(Monthly)</span></p>
+                  <p aria-live="polite"><span class="plan-name"></span> <span class="plan-type">(Monthly)</span></p>
                   <label class="switch" for="change" aria-labelledby="change-plan">
-                    <span class="sr-only" aria-live="polite" id="change-plan" aria-label="Change pricing plan">Change</span>
-                    <input type="checkbox" name="yearly" id="change" class="yearly-input yearly-input-2">
+                    <span id="change-plan">Change</span>
+                    <input type="checkbox" name="yearly" id="change" class="yearly-input yearly-input-2" aria-label="Change pricing plan">
                   </label>
                 </div>
                   <span class="fee plan-price">
