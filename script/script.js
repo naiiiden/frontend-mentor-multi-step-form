@@ -51,21 +51,11 @@ btn_next.addEventListener("click", (e) => {
         validateStep2();
     } else if (stepIndex == 3) {
         plusStep(1);
-        // document.querySelectorAll(".form-step-3 label").forEach(label => {
-        //     if (label.querySelector("input").checked) {
-        //         document.querySelector(".plan-addons-container").innerHTML += 
-        //             `<div class="addon-price-container">
-        //                 <p>${label.querySelector(".addon").textContent}</p>
-        //                 <span class="fee">
-        //                     $<span class="price">${label.querySelector(".price").textContent}</span>/<span class="monthly-yearly">mo</span>
-        //                 </span>
-        //             </div>`
-        //     }    
-        // })   
     }
-
+    
     stepIndex == 2 ? first2ndFocus() : "";
     stepIndex == 3 ? first3rdFocus() : "";
+    stepIndex == 4 ? totalPrice()  : "";
     
     stepIndex == steps.length - 1 
     ? (btn_next.style.display = "none", btn_submit.style.display = "block")
@@ -164,7 +154,6 @@ for (let i = 0; i < step2Inputs.length; i++) {
                 document.querySelector(".plan-name").textContent = step2Inputs[i].parentNode.querySelector(".plan-title").textContent, 
                 document.querySelector(".plan-main-price").textContent = step2Inputs[i].parentNode.querySelector(".price").textContent
             ) : "";
-            // step2Inputs[i].checked ? document.querySelector(".plan-main-price").textContent = step2Inputs[i].parentNode.querySelector(".price").textContent : "";
             step2Inputs[i].parentNode.style.background = step2Inputs[i].checked ? "hsl(217, 100%, 97%)" : "#fff";
             step2Inputs[i].parentNode.style.border = step2Inputs[i].checked ? "1px solid hsl(243, 100%, 62%)" : "1px solid hsl(229, 24%, 87%)";
         };
@@ -215,6 +204,7 @@ document.querySelectorAll(".form-step-3 input[type='checkbox']").forEach(input =
     });
 });
 
+// dynamically create div in .form-step-4 if checkbox is checked in .form-step-3
 let dynamicDiv;
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const container = document.querySelector('.plan-addons-container');
@@ -249,3 +239,12 @@ checkboxes.forEach(checkbox => {
         }
     });
 });
+
+// calculate total price of all .price elements in .form-step-4 and assign value to .total-price
+function totalPrice() {
+    let total = 0;
+    document.querySelectorAll(".form-step-4 .price").forEach(price => {
+        total += parseInt(price.textContent);
+    });
+    document.querySelector(".total-price").textContent = total;
+}
