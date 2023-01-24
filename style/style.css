@@ -79,7 +79,7 @@ header .step-subcontainer .step-info {
   background: hsl(0deg, 0%, 100%);
   border-radius: 0.5rem;
   padding: 1.5rem 1.25rem;
-  margin: -4rem 1rem 1rem 1rem;
+  margin: -4rem 1rem 10rem 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .main-subcontainer .text-container, .form-step-final .text-container {
